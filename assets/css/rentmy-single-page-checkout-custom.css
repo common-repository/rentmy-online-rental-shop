@@ -1,0 +1,549 @@
+.rentmy-checkout-content .container-fluid {
+    padding: 0 !important;
+}
+
+.rentmy-checkout-content .rentmycheckout-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rentmy-checkout-content .card {
+    border: none;
+}
+
+@media (min-width: 576px) {
+    .rentmy-checkout-content .rentmycheckout-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rentmy-checkout-content .rentmycheckout-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .rentmy-checkout-content .rentmycheckout-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rentmy-checkout-content .rentmycheckout-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rentmy-checkout-content .col-xl-7.col-lg-7.col-md-6.col-sm-12 {
+        flex: 385px;
+        max-width: 384px;
+    }
+    .rentmy-checkout-content .col-xl-5.col-lg-5.col-md-6.col-sm-12 {
+        flex: 385px;
+        max-width: 384px;
+    }
+}
+
+@media (min-width: 992px) {
+    .rentmy-checkout-content .col-xl-7.col-lg-7.col-md-6.col-sm-12 {
+        flex: 560px;
+        max-width: 560px;
+    }
+    .rentmy-checkout-content .col-xl-5.col-lg-5.col-md-6.col-sm-12 {
+        flex: 400px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rentmy-checkout-content .col-xl-7.col-lg-7.col-md-6.col-sm-12 {
+        flex: 665px;
+        max-width: 665px;
+    }
+    .rentmy-checkout-content .col-xl-5.col-lg-5.col-md-6.col-sm-12 {
+        flex: 475px;
+        max-width: 475px;
+    }
+}
+
+.rentmy-checkout-content .renmty-checkout-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.rentmy-checkout-content .renmty-checkout-collum-12,
+.rentmy-checkout-content .renmty-checkout-collum-6,
+.rentmy-checkout-content .renmty-checkout-collum-4,
+.rentmy-checkout-content .renmty-checkout-collum-3,
+.rentmy-checkout-content .renmty-checkout-collum-2 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.rentmy-checkout-content .renmty-checkout-collum-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.rentmy-checkout-content .renmty-checkout-collum-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.rentmy-checkout-content .renmty-checkout-collum-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.rentmy-checkout-content .renmty-checkout-collum-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.rentmy-checkout-content .billing-details-leftside {
+    padding-top: 40px;
+}
+
+.rentmy-checkout-content .billingdetails-leftside-inner {
+    border: 3px solid #f2f3f8;
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.rentmy-checkout-content .returning-customer {
+    background-color: #f2f3f8;
+    padding: 12px 15px;
+}
+
+.rentmy-checkout-content .returning-customer h5 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+.rentmy-checkout-content .returning-customer h5 a {
+    padding-left: 15px;
+    color: #59a9a1;
+}
+
+.rentmy-checkout-content .wc-checkout-title {
+    padding: 30px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: .5px;
+    position: absolute;
+    left: 11px;
+    top: -13px;
+    background-color: #fff;
+    width: auto;
+    padding: 0 10px;
+    height: 22px;
+    margin: 0;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .form-control {
+    border: 1px solid #eff1f7;
+    height: 40px;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .custom-checkbox label {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #666;
+}
+
+.rentmy-checkout-content .fulfillment-form-area .custom-control-label {
+    font-weight: 600 !important;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.rentmy-checkout-content .fulfillment-form-area .fulfilment-body .custom-control-label {
+    font-weight: 400 !important;
+}
+
+.rentmy-checkout-content .fulfillment-form-area .custom-control-label::before {
+    top: .15rem;
+}
+
+.rentmy-checkout-content .fulfillment-form-area .custom-control-label::after {
+    top: .15rem;
+}
+
+.rentmy-checkout-content .fulfilment-body {
+    padding-bottom: 15px !important;
+    border-top: 1px solid #f2f3f8;
+}
+
+.rentmy-checkout-content .fulfilment-body .custom-control.custom-radio {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f3f8;
+}
+
+.rentmy-checkout-content .order-list {
+    min-height: 85px;
+    width: 100%;
+    border-bottom: 1px solid #f2f3f8;
+    margin: 0 auto;
+    padding: 10px 0;
+    float: left;
+}
+
+.rentmy-checkout-content .order_summery .order-img {
+    width: 60px;
+    float: left;
+    margin-right: 14px;
+}
+
+.rentmy-checkout-content .order_summery .order-img img {
+    width: 60px;
+    height: 65px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    border: 1px solid #f2f3f8;
+}
+
+.rentmy-checkout-content .order-product_details {
+    width: auto;
+    float: left;
+    padding-top: 8px;
+}
+
+.rentmy-checkout-content .order-product_details .name {
+    width: 100%;
+    min-height: 25px;
+}
+
+.rentmy-checkout-content .bottom_info {
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.rentmy-checkout-content .bottom_info .qty {
+    width: auto;
+    float: left;
+    font-weight: 400;
+}
+
+.rentmy-checkout-content .order_summery .order-product_price {
+    width: auto;
+    float: left;
+    text-align: right;
+    padding-right: 6px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.rentmy-checkout-content .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
+.rentmy-checkout-content textarea.form-control {
+    resize: none;
+    height: 100px !important;
+}
+
+.rentmy-checkout-content .order_review_wrapper {
+    position: relative;
+    padding: 20px 35px 35px;
+    border: 3px solid #65B3AC;    
+}
+
+.rentmy-checkout-content #order_review_heading {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    display: inline-block;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0 10px;
+    letter-spacing: .5px;
+    background-color: #fff;
+}
+
+.rentmy-checkout-content .checkout-ordertable {
+    width: 100%;
+    margin-bottom: 0;
+    border: none;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content table tr {
+    border-bottom: none !!important;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .checkout-ordertable th {
+    width: 60%;
+    vertical-align: middle;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content table thead th {
+    padding: 15px;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content table thead td {
+    padding: 15px;
+    padding: 3px 0;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content table th {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    color: #555 !important;
+    padding: 3px 0;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.rentmy-checkout-content .set-line {
+    line-height: 20px;
+}
+
+.rentmy-checkout-content .checkout-ordertable tbody td.product-name {
+    font-size: 12px !important;
+    text-transform: uppercase;
+    padding-right: 20px;
+    font-weight: 400 !important;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .checkout-ordertable td {
+    vertical-align: top;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content table td {
+    padding: 3px 0;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .checkout-ordertable tfoot {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .checkout-ordertable tfoot tr.cart-subtotal td {
+    font-size: 18px;
+}
+
+.rentmy-checkout-content .rentmy-checkout-content table th,
+.rentmy-checkout-content .rentmy-checkout-content table td {
+    padding: 10px 0;
+}
+
+.rentmy-checkout-content .rentmy-checkout-content .order-total th {
+    font-size: 18px;
+}
+
+.rentmy-checkout-content .card-header .custom-control {
+    font-size: 15px;
+}
+
+.rentmy-checkout-content .card-header {
+    background-color: transparent;
+    padding: 6px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.rentmy-checkout-content .card-header label {
+    font-weight: 500 !important;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.rentmy-checkout-content .paypal-img {
+    width: 60px;
+    float: right;
+    margin-top: -20px;
+}
+
+.rentmy-checkout-content .card-body {
+    padding: 10px 0;
+    font-weight: 300;
+    color: #777;
+}
+
+.rentmy-checkout-content .placeorder-btn {
+    background-color: #65b3ab;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+}
+
+.rentmy-checkout-content .backtocart-btn {
+    background-color: #2da4e0;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+}
+
+.rentmy-checkout-content button {
+    border: none;
+}
+
+.rentmy-checkout-content .placeorder-btn:focus,
+.rentmy-checkout-content .placeorder-btn:hover {
+    background-color: #23968a;
+    outline: 0;
+    box-shadow: none;
+}
+.rentmy-checkout-content label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+@media (min-width: 300px) and (max-width: 1199px) {
+    .rentmy-checkout-content .backtocart-btn {
+        padding: 10px 15px;
+    }
+    .rentmy-checkout-content .placeorder-btn {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .rentmy-checkout-content .order_review_wrapper {
+        padding: 20px 15px 35px;
+    }
+}
+
+.rentmy-checkout-content .billing-details-leftside {
+    margin-bottom: 30px;
+}
+
+.custom-control-label::before {
+    top: 4px !important;
+    left: -24px !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.custom-control-label::after {
+    top: 4px !important;
+    left: -24px !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.rentmy-checkout-content.rentmy-checkout-content .checkout-ordertable th,
+.rentmy-checkout-content.rentmy-checkout-content .checkout-ordertable td {
+    border: none;
+    border-bottom: 1px solid #f2f3f8;
+}
+
+.rentmy-checkout-content .order-product_details .name {
+    font-size: 15px;
+}
+
+.rentmy-checkout-content .bottom_info .qty {
+    font-size: 15px;
+}
+
+.rentmy-checkout-content .card-header h2 {
+    margin: 0;
+}
+
+.rentmy-page .rentmy-checkout-content.rentmy-plugin-manincontent .custom-control-label::before {
+    top: 4px !important;
+    left: -24px !important;
+    width: 16px !important;
+    height: 16px !important;
+    border: #adb5bd solid 1px;
+}
+
+.rentmy-page .rentmy-plugin-manincontent .checkbox-container.custom-control-label::before {
+    left: 0 !important;
+    top: 0 !important;
+    border: none;
+}
+
+.rentmy-page .rentmy-checkout-content.rentmy-plugin-manincontent .radio-container .checkmark {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.rentmy-page .rentmy-plugin-manincontent .radio-container.radiolist-container {
+    width: 100%;
+}
+
+.rentmy-checkout-content h4 {
+    width: 100%;
+    padding: 15px 15px 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+
+/* single page login wecome title */
+
+.single-page-checkout-login .checkout-welcom-title {
+    padding: 10px;
+    margin: initial;
+    margin-bottom: 1em;
+    border: 3px solid #f2f3f8;
+}
+
+
+#card-element {
+    padding: 12px 0!important;
+    height: 45px;
+    border: 1px solid #eee !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}

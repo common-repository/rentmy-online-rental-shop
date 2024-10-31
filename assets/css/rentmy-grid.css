@@ -1,0 +1,121 @@
+
+.singleshop-section {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+}
+
+.single-shop {
+    background-color: #f2f3f8;
+    /*margin-top: -100px;*/
+    /*border: 1px solid #f2f3f9;*/
+    /*border-bottom: none;*/
+    /*border-top: none;*/
+    transition: all .3s;
+    height: 250px;
+    overflow: hidden;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.single-shop:hover {
+    box-shadow: 0px 0px 10px #ddd;
+    transition: all .3s;
+}
+
+.singleshope-imgarea {
+    height: 250px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.single-shop h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.single-shop p {
+    line-height: 23px;
+    padding-bottom: 10px;
+    color: #888;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.single-shop a {
+    /*color: #0483BF;*/
+    font-weight: 500;
+}
+
+.single-shop:hover a {
+    opacity: .8;
+}
+
+@media (max-width: 1300px) {
+    .single-shop {
+        height: 200px;
+    }
+    .singleshope-imgarea {
+        height: 200px;
+    }
+    .single-shop h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .single-shop h4 {
+        font-size: 13px;
+    }
+    .single-shop p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .single-shop a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .single-shop {
+        margin-top: 30px;
+        border: 1px solid #f2f3f8;
+    }
+    .singleshope-imgarea img {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    .single-shop {
+        height: auto;
+        padding: 0 15px 15px;
+    }
+    .singleshope-imgarea {
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .singleshope-imgarea img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .single-shop h4 {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .single-shop p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .single-shop a {
+        font-size: 14px;
+    }
+}

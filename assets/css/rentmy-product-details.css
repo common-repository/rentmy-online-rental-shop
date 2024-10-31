@@ -1,0 +1,203 @@
+.rm-date-start-box,
+.rm-date-end-box {
+    position:  relative;
+}
+.rm-date-end-box .date-overlay,
+.rm-date-start-box .date-overlay {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+#rm-date-end,
+#rm-date-start {
+    padding: 0 !important;
+    height: auto;
+    border: none;
+    background: #fff !important;
+}
+
+.pick-end-date {
+    display: inline-block;
+    margin-top: 15px;
+    border: 1px solid #333;
+    color: #333 !important;
+    padding: 10px;
+    text-decoration: none !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .radio-container {
+    padding:  10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid #eee;
+    color: #333;
+
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .radio-container.active {
+    border: 1px solid #333;
+    color: #333;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .radio-container .checkmark {
+    display:  none;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .variants label {
+    width: auto;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .variantSets {
+    width: 100%;
+}
+
+
+div.rentmy-plugin-manincontent .rentmy-product-details .radio-container {
+    padding:  10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid #eee;
+    color: #333;
+
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .radio-container.active {
+    border: 1px solid #333;
+    color: #333;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .radio-container .checkmark {
+    display:  none;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .variants label {
+    width: auto;
+}
+
+div.rentmy-plugin-manincontent .rentmy-product-details .variantSets {
+    width: 100%;
+}
+
+
+div.rentmy-plugin-manincontent .rental-type label.radio-container.rent_input,
+div.rentmy-plugin-manincontent .rental-type label.radio-container.buy_input {
+    border: none !important;
+    padding: 0 !important;
+}
+
+div.rentmy-plugin-manincontent .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align: middle;
+    margin-right:  15px;
+  }
+
+div.rentmy-plugin-manincontent  .switch input {
+    display: none;
+  }
+
+div.rentmy-plugin-manincontent  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+div.rentmy-plugin-manincontent  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 8px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+div.rentmy-plugin-manincontent  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+div.rentmy-plugin-manincontent  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+div.rentmy-plugin-manincontent  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+
+div.rentmy-plugin-manincontent  .off {
+    display: none;
+  }
+
+div.rentmy-plugin-manincontent  .on,
+div.rentmy-plugin-manincontent  .off {
+    color: green;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10px;
+    left: 55px;
+    font-size: 14px;
+  }
+
+div.rentmy-plugin-manincontent  .off{
+      color:red;
+  }
+div.rentmy-plugin-manincontent  input:checked+ .slider .off {
+    display: block;
+  }
+
+div.rentmy-plugin-manincontent  input:checked + .slider .on {
+    display: none;
+  }
+
+div.rentmy-plugin-manincontent  .slider.round {
+    border-radius: 17px;
+  }
+
+div.rentmy-plugin-manincontent  .slider.round:before {
+    border-radius: 50%;
+  }
+
+div.rentmy-plugin-manincontent  .toggleoff{
+    background-color: #2196F3;
+  }
+div.rentmy-plugin-manincontent  .toggleon{
+    background-color: #ccc;
+  }
+div.rentmy-plugin-manincontent  .toggledisabled{
+    background: #D3D3D3 !important;
+ }
+
+.rentmy-plugin-manincontent #rm_quantity {
+    background: #fff !important;
+}
+
+.rentmy-plugin-manincontent .duration_box .radio-container {
+    width: auto !important;
+}
+
+.rentmy-plugin-manincontent .time-selection label {
+    width: auto;
+}
+
+.rentmy-plugin-manincontent .w100 {
+    width: 100% !important;
+}

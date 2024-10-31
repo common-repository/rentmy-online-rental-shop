@@ -1,0 +1,5642 @@
+    /** Common CSS */
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories {
+        list-style: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-parent-category {
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-list-children-wrapper {
+        margin-left: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rent-my-list-link .dashicons,
+    .rentmy-parent-category .dashicons {
+        margin-left: 10px;
+        margin-top: 8px;
+        font-size: 13px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-billing .btn,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment .btn,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .btn,
+    .rentmy-plugin-manincontent .checkout-complete .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-billing label,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment label,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment label,
+    .rentmy-plugin-manincontent .checkout-complete label {
+        width: 100%;
+        color: #777 !important;
+        display: block;
+        font-weight: 500 !important;
+        margin-bottom: 0;
+        font-size: 18px !important;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control.custom-radio {
+        margin-bottom: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control.custom-radio label {
+        line-height: 25px !important;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control-input:checked~.custom-control-label::before {
+        color: #fff;
+        border-color: #333 !important;
+        background-color: #333 !important;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 0;
+        cursor: pointer;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 21px;
+        width: 21px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container input:checked~.checkmark {
+        background-color: #111 !important;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container input:checked~.checkmark:after {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container .checkmark:after {
+        top: 7px;
+        left: 7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control-label::before {
+        left: 0 !important;
+        top: 0 !important;
+        border: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-billing input,
+    .rentmy-plugin-manincontent .rentmy-checkout-billing select,
+    .rentmy-plugin-manincontent .rentmy-checkout-billing textarea,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment input,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment select,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment textarea,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment input,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment select,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment textarea,
+    .rentmy-plugin-manincontent .checkout-complete input,
+    .rentmy-plugin-manincontent .checkout-complete select,
+    .rentmy-plugin-manincontent .checkout-complete textarea {
+        background-color: #fff !important;
+        outline: none !important;
+        outline-offset: none !important;
+        height: 50px;
+        margin-bottom: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-mb-0 {
+        margin-bottom: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-mt-0 {
+        margin-top: 0;
+    }
+    /** Product  List*/
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid {
+        width: 330px;
+        padding: 0 15px !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-2 {
+        width: 50%;
+    }
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-3 {
+        width: 33.33333333%;
+    }
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-4 {
+        width: 25%;
+    }
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-5 {
+        width: 20%;
+    }
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-6 {
+        width: 16.666667%;
+    }
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid-inner {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        padding-bottom: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid-inner:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-grid-img {
+        position: relative;
+        overflow: hidden;
+        height: 220px;
+        padding: 20px 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-grid-img img {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-grid-img .product-overley {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid:hover .product-overley {
+        opacity: unset;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-overley a {
+        background-color: #fff;
+        color: #555 !important;
+        width: 90%;
+        position: absolute;
+        bottom: 10px;
+        left: 5%;
+        height: 45px;
+        line-height: 45px;
+        letter-spacing: 1px;
+        font-weight: 400 !important;
+        border-top: 1px solid #eee;
+        right: 5%;
+        border-bottom: none;
+        box-shadow: none;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-overley a i {
+        font-size: 12px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-grid-body {
+        padding: 0 15px;
+        border-top: 1px solid #eee;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-name {
+        display: table;
+        width: 100%;
+        height: 60px;
+        padding-top: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .product-name a {
+        text-decoration: none;
+        box-shadow: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid h4 {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 15px !important;
+        letter-spacing: 0px !important;
+        margin-top: 20px !important;
+        font-weight: 600 !important;
+        margin-bottom: 10px;
+        line-height: 22px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid .price {
+        width: 100%;
+        font-size: 15px !important;
+        margin-bottom: 18px !important;
+        display: inline-block !important;
+        line-height: 22px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid-body .button {
+        width: 48%;
+        height: 42px;
+        background-color: #2e353b;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500 !important;
+        display: inline-block;
+        text-transform: capitalize;
+        line-height: 42px;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 3px !important;
+        letter-spacing: 0.046875em !important;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid-body .button:hover {
+        background-color: #444e56 !important;
+    }
+    /** Product Details */
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .images,
+    .rentmy-plugin-manincontent .rentmy-product-details .details {
+        float: left;
+        width: 50%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .images img {
+        width: 100%;
+        border: 5px solid #f5f5f5;
+        margin-bottom: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .details {
+        padding-left: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .details h1 {
+        margin-top: 10px;
+        font-size: 35px !important;
+        font-weight: 500 !important;
+        margin: 0 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details h1:not(.site-title):before,
+    h2:before {
+        display: none !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .details .buy h6,
+    .rentmy-plugin-manincontent .rentmy-product-details .details .rent h6 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .details .rental-type {
+        margin-bottom: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .radio-container {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 18px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+    
+
+.rentmy-plugin-manincontent .rentmy-product-details .radio-container.disabled {
+    cursor:  not-allowed;
+}
+
+    .rentmy-plugin-manincontent .rentmy-product-details .radio-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 21px;
+        width: 21px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .radio-container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .radio-container input:checked~.checkmark {
+        background-color: #111;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .radio-container input:checked~.checkmark:after {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .radio-container .checkmark:after {
+        top: 7px;
+        left: 7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .price-options {
+        margin-bottom: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .quantity label {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .quantity input {
+        width: 100px !important;
+        display: unset !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .availability span {
+        font-size: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .entry .entry-content p.price {
+        font-weight: 500;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .entry .entry-content p.price small {
+        font-weight: 400;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="text"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="email"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="url"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="password"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="search"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="number"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="tel"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="range"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="date"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="month"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="week"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="time"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="datetime"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="datetime-local"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="color"],
+    .rentmy-plugin-manincontent .rentmy-product-details textarea {
+        padding: 0.10rem 0.66rem !important;
+        height: 45px;
+        font-size: 15px !important;
+        border-radius: 4px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .button,
+    .rentmy-plugin-manincontent .rentmy-product-details button,
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="button"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="reset"],
+    .rentmy-plugin-manincontent .rentmy-product-details input[type="submit"] {
+        line-height: 0;
+        height: 46px;
+        border-radius: 4px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .available-variations {
+        font-weight: 500 !important;
+        margin-top: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .variants {
+        margin-bottom: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .form-group {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .variants label {
+        width: 100%;
+        display: inline-block;
+        font-weight: 600 !important;
+        font-size: 18px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .variants select {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        min-width: 100px;
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        width: 100%;
+        padding: 0 5px !important;
+    }
+    
+    .rentmy-plugin-manincontent .rm-rental-daterange {
+        padding-top: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .daterange {
+        margin-top: 0;
+        width: auto;
+    }
+    /* package details css */
+    
+    .rentmy-plugin-manincontent .package-items h5 {
+        margin: 0;
+        padding: 10px 0
+    }
+    
+    .rentmy-plugin-manincontent .package-items ul {
+        padding-left: 0 !important;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .rentmy-plugin-manincontent .package-items ul li h6 {
+        margin: 0;
+        padding: 5px 0;
+    }
+    
+    .rentmy-plugin-manincontent .package-items select {
+        height: 45px;
+        padding: 0 15px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+    /** Cart List */
+    
+    .rentmy-plugin-manincontent .rentmy-table table thead,
+    .rentmy-plugin-manincontent .rentmy-table table tbody,
+    .rentmy-plugin-manincontent .rentmy-cart-form table thead,
+    .rentmy-plugin-manincontent .rentmy-cart-form table tbody {
+        border-left: 1px solid #f2f3f8;
+        border-right: 1px solid #f2f3f8;
+    }
+    
+    .rentmy-plugin-manincontent rentmy-table table .product-remove {
+        text-decoration: none !important;
+    }
+    
+    .rentmy-plugin-manincontent rentmy-table table,
+    .rentmy-plugin-manincontent .rentmy-cart-form table {
+        border: 1px solid #f2f3f8;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table th,
+    .rentmy-plugin-manincontent .rentmy-table td,
+    .rentmy-plugin-manincontent .rentmy-cart-form th,
+    .rentmy-plugin-manincontent .rentmy-cart-form td {
+        border: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table table th,
+    .rentmy-plugin-manincontent .rentmy-table table td,
+    .rentmy-plugin-manincontent .rentmy-cart-form table td,
+    .rentmy-plugin-manincontent .rentmy-cart-form table th {
+        vertical-align: middle !important;
+        text-align: left;
+        border-top: 1px solid #f2f3f8;
+        padding: .75rem .95rem;
+        color: #555;
+        font-size: 15px !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table table th,
+    .rentmy-plugin-manincontent .rentmy-cart-form table th {
+        border-bottom: 1px;
+        background-color: #f2f3f8;
+        color: #444;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form table thead th:nth-of-type(1) {
+        width: 60px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table table td img,
+    .rentmy-plugin-manincontent .rentmy-cart-form table td img,
+    .rentmy-plugin-manincontent .rentmy-cart-form table th img {
+        width: 60px;
+        padding: .25rem;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: .25rem;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table table td p,
+    .rentmy-plugin-manincontent .rentmy-cart-form table td p,
+    .rentmy-plugin-manincontent .rentmy-cart-form table th p {
+        margin: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table table td a,
+    .rentmy-plugin-manincontent .rentmy-cart-form table td a,
+    .rentmy-plugin-manincontent .rentmy-cart-form table th a {
+        color: #555;
+        box-shadow: none;
+        font-size: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-table table tbody tr:last-of-type td,
+    .rentmy-plugin-manincontent .rentmy-cart-form table tbody tr:last-of-type td {
+        font-weight: 600;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area,
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-summery-area {
+        float: left;
+        width: 50%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area {
+        padding-right: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-total-title {
+        background-color: #f2f3f8;
+        padding: 10px 15px 8px;
+        margin-bottom: 0 !important;
+        margin-top: 0;
+        font-size: 22px !important;
+        text-transform: capitalize;
+        color: #111;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .size,
+    .rentmy-plugin-manincontent .rentmy-cart-form .quantity {
+        width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .btn-dark {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #343a40;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        border-radius: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .btn-group-sm>.btn,
+    .rentmy-plugin-manincontent .rentmy-cart-form .btn-sm {
+        padding: 3px 6px !important;
+        font-size: 10px!important;
+        line-height: 1.5;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .quantity .cart-qunt {
+        width: 30px !important;
+        border: 1px solid;
+        cursor: initial;
+        border-radius: 0px;
+        margin-left: -5px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .product-quantity {
+        width: 110px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-plus {
+        margin-left: -5px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-code {
+        margin-bottom: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-code input {
+        display: inline-block;
+        width: 180px;
+        font-size: 12px;
+        height: 40px;
+        color: #888;
+        padding-left: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-code a {
+        display: inline-block;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area a {
+        height: 42px !important;
+        background-color: #2e353b;
+        color: #fff;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        display: inline-block;
+        text-transform: capitalize;
+        line-height: 42px !important;
+        padding: 0 15px !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 3px !important;
+        letter-spacing: 0.046875em !important;
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area a:hover {
+        color: #eee !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-btn,
+    .rentmy-plugin-manincontent .rentmy-cart-form .continue-btn {
+        float: right;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .remove {
+        background-color: transparent !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .checkout-button:after {
+        display: none;
+    }
+    
+    @media (max-width: 1299px) {
+        .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area {
+            width: 58%;
+        }
+        .rentmy-plugin-manincontent .rentmy-cart-form .cart-summery-area {
+            width: 42%;
+        }
+    }
+    
+    @media (max-width: 867px) {
+        .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-cart-form .cart-summery-area {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    /** Checkout-billing */
+    
+    .rentmy-plugin-manincontent .rentmy-progressbar {
+        position: relative;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-progressbar:before {
+        top: 14px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+        z-index: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-progressbar li {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-progressbar .btn-circle {
+        background-color: #eee;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0 !important;
+        font-size: 12px;
+        line-height: 18px !important;
+        border-radius: 15px !important;
+        border: none;
+        box-shadow: none !important;
+        position: relative;
+        margin-bottom: 10px;
+        text-decoration: none !important;
+        color: #111 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-progressbar li.active .btn-circle {
+        color: #fff !important;
+        background-color: #111 !important;
+        border-color: #32355d !important;
+        box-shadow: none !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-progressbar .btn-circle:hover,
+    .rentmy-plugin-manincontent .rentmy-progressbar .btn-circle:active,
+    .rentmy-plugin-manincontent .rentmy-progressbar .btn-circle:focus {
+        box-shadow: none !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-form-group {
+        margin-bottom: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-form-group select {
+        width: 350px;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-header h2 {
+        font-size: 30px !important;
+        padding-left: 5px;
+        color: #111 !important;
+        font-weight: 600 !important;
+        padding-top: 10px;
+    }
+    
+    .rentmy-plugin-manincontent,
+    .rentmy-plugin-manincontent input,
+    .rentmy-plugin-manincontent select {
+        font-size: medium;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-billing .rentmy-form-group {
+        width: 49% !important;
+        display: inline-block;
+        padding: 0 5px !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-billing input {
+        width: 100% !important;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-back-continue {
+        width: 100%;
+        display: inline-block;
+        margin-top: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-continue-btn {
+        float: right;
+    }
+    /** Checkout-Fulfillment */
+    
+    .rentmy-plugin-manincontent #checkout-fulfillment ul {
+        list-style: none;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-fulfillment ul li {
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-fulfillment ul li img {
+        width: 70px;
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-fulfillment ul li.active img {
+        border: 5px solid #041531;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-fulfillment ul li span {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        margin: auto;
+        margin-top: -15px;
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-payment .form-group,
+    .rentmy-plugin-manincontent #checkout-fulfillment .form-group {
+        margin-bottom: 15px !important;
+        width: 49% !important;
+        display: inline-block !important;
+        float: left !important;
+        padding: 0 5px !important;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-payment .rentmy-form-group,
+    .rentmy-plugin-manincontent #checkout-fulfillment .rentmy-form-group {
+        padding-left: 5px;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-info .rentmy-form-group select,
+    .rentmy-plugin-manincontent #checkout-payment .form-group select,
+    .rentmy-plugin-manincontent #checkout-payment .rentmy-form-group select,
+    .rentmy-plugin-manincontent #checkout-payment .form-group input,
+    .rentmy-plugin-manincontent #checkout-fulfillment .rentmy-form-group .form-control,
+    .rentmy-plugin-manincontent #checkout-payment .form-group input,
+    .rentmy-plugin-manincontent #checkout-fulfillment .form-group input,
+    .rentmy-plugin-manincontent #checkout-payment .rentmy-note-group input,
+    .rentmy-plugin-manincontent #checkout-payment .form-group .form-control,
+    .rentmy-plugin-manincontent #checkout-fulfillment .form-group .form-control {
+        background-color: #fff !important;
+        width: 100% !important;
+        border: 1px solid #eee !important;
+        color: #888 !important;
+        height: 50px !important;
+        padding-left: 15px !important;
+        font-size: 16px !important;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-payment .algolia-places,
+    .rentmy-plugin-manincontent #checkout-fulfillment .algolia-places {
+        width: 100% !important;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-button::after {
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-complete .cart-summery-area {
+        float: right;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-complete .cart-summery-area a {
+        height: 42px !important;
+        background-color: #2e353b;
+        color: #fff;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        display: inline-block;
+        text-transform: capitalize;
+        line-height: 42px !important;
+        padding: 0 15px !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 3px !important;
+        letter-spacing: 0.046875em !important;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+    
+    .rentmy-plugin-manincontent .download-receipt {
+        text-align: center;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-complete .cart-summery-area a {
+        color: #fff !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-success-msg {
+        background-color: #b8d4b8;
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-errore-msg {
+        background-color: #ce7979;
+        padding: 15px;
+        display: block;
+        width: 100%;
+        color: #ffffff;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-back-continue .back-continue-btn {
+        display: inline-block;
+        background-color: #111 !important;
+        color: #fff;
+        border: none;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        height: 50px !important;
+        padding: 0 20px !important;
+        line-height: 50px !important;
+        border-radius: 3px !important;
+        width: auto !important;
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-back-continue .back-continue-btn:hover {
+        background-color: #333;
+        color: #fff !important;
+    }
+    /** Checkout-Paymentment */
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .payment-type ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: center;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .payment-type ul li {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .payment-type ul li img {
+        width: 70px;
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .payment-type ul li.active img {
+        border: 5px solid #041531;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .payment-type ul li span {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        margin: auto;
+        margin-top: -15px;
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .expiration-date-group {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .expiration-date-group label {
+        padding-left: 5px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-form-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .rentmy-plugin-manincontent #checkout-payment .form-group {
+        margin-bottom: 15px !important;
+        width: 100% !important;
+        display: inline-block !important;
+        float: left !important;
+        padding: 0 5px !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-form-row #card-element {
+        float: left;
+        width: 98.5%;
+        display: inline-block;
+        height: 50px;
+        padding: 15px;
+        border: 1px solid #eee !important;
+        margin-left: 5px;
+        border-radius: 4px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-form-row .__PrivateStripeElement {
+        border: 1px solid red !important;
+        height: 50px;
+        padding: 15px!important;
+    }
+    
+    .ElementsApp {
+        font-size: 14px;
+        line-height: 1.2em;
+        height: 1.2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: 1px solid #eee;
+        padding: 15px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-form-row iframe {
+        height: 50px !important;
+        border: 1px solid #eee !important;
+        padding: 15px !important;
+    }
+    /*.rentmy-plugin-manincontent .rentmy-form-row .CardField CardField--ltr {*/
+    /*    padding: 15px;*/
+    /*    border: 1px solid #eee;*/
+    /*    left: 5px;*/
+    /*    right: 30px;*/
+    /*}*/
+    
+    .rentmy-plugin-manincontent .error {
+        color: #e80707;
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    
+    .rentmy-error-wrapper li strong {
+        color: #e80707;
+    }
+    /* theme twentyseventeen css */
+    
+    .rentmy-plugin-manincontent .theme-twentyseventeen .content-area {
+        width: 100% !important;
+    }
+    
+    .rentmy-plugin-manincontent .theme-twentyseventeen .entry-header {
+        width: 100% !important;
+    }
+    
+    .rentmy-plugin-manincontent .theme-twentyseventeen .entry-content {
+        width: 100% !important;
+    }
+    
+    .rentmy-plugin-manincontent .theme-twentyseventeen .page .wrap {
+        padding: 0;
+    }
+    
+    .rentmy-plugin-manincontent .theme-twentyseventeen .content-are {
+        width: 100% !important;
+    }
+    /* custome checkbox css */
+    
+    .rentmy-plugin-manincontent .checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: 25px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area .checkbox-container {
+        margin-bottom: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container input:checked~.checkmark {
+        background-color: #111;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container input:checked~.checkmark:after {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    /* pagination css */
+    
+    .rentmy-plugin-manincontent div.rentmy-pagination {
+        padding: 3px;
+        margin: 3px;
+    }
+    
+    .rentmy-plugin-manincontent div.rentmy-pagination a {
+        padding: 2px 5px 2px 5px;
+        margin: 2px;
+        border: 1px solid #AAAADD;
+        text-decoration: none;
+        /* no underline */
+        color: #000099;
+    }
+    
+    .rentmy-plugin-manincontent div.rentmy-pagination a:hover,
+    div.rentmy-pagination a:active {
+        border: 1px solid #000099;
+        color: #000;
+    }
+    
+    .rentmy-plugin-manincontent div.rentmy-pagination span.current {
+        padding: 2px 5px 2px 5px;
+        margin: 2px;
+        border: 1px solid #000099;
+        font-weight: bold;
+        background-color: #000099;
+        color: #FFF;
+    }
+    
+    .rentmy-plugin-manincontent div.rentmy-pagination span.disabled {
+        padding: 2px 5px 2px 5px;
+        margin: 2px;
+        border: 1px solid #EEE;
+        color: #DDD;
+    }
+    
+    .rentmy-plugin-manincontent button:disabled {
+        opacity: 0.6;
+    }
+    /* Radio button csss */
+    
+    .rentmy-plugin-manincontent .checkout-fulfillment-message {
+        margin: 5px 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-radio-text,
+    .rentmy-plugin-manincontent .rentmy-radio-price {
+        display: inline-block;
+        width: 100%;
+        font-weight: 600;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-radio-text {
+        font-size: 20px;
+        color: #333;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-radio-price {
+        font-size: 12px;
+        color: #888;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-fulfillment-message .radio-container .checkmark {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        height: 21px;
+        width: 21px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    /* widget area css */
+    
+    .right-sidebar #secondary {
+        padding-left: 0 !important;
+    }
+    
+    .widget-area {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area h3 {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area h3 {
+        background-color: #f2f3f8;
+        padding: 10px 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area #rentmy-search-form .coupon-code {
+        display: flex;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area #rentmy-search-form input {
+        width: 200px;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 3px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area #rentmy-search-form .rentmy-button {
+        background-color: #111;
+        border: none;
+        height: 40px;
+        line-height: 36px;
+        padding: 4px 10px;
+        color: #fff;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories {
+        padding: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories li {
+        color: #444;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories li a {
+        color: #444;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 15px !important;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories li.rentmy-list-children-wrapper a {
+        color: #666;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-list-children-wrapper {
+        margin-left: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-responsive-image {
+        width: 50px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories .checkbox-container .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #ebecf1;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories .checkbox-container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 4px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container input:checked~.checkmark.rentmy-no-check {
+        background-color: #eee;
+    }
+    
+    .rentmy-plugin-manincontent .checkbox-container input:checked~.checkmark.rentmy-no-check:after {
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent table tr th,
+    .rentmy-plugin-manincontent table tr td {
+        word-break: normal!important;
+    }
+    
+    @media (max-width:1199px) {
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-2 {
+            width: 50%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-3 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-4 {
+            width: 25%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-5 {
+            width: 20%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-6 {
+            width: 16.666667%;
+        }
+    }
+    @media (max-width:992px) {
+        .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area a {
+            padding: 0 10px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-progressbar li {
+            font-size: 12px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-2 {
+            width: 50%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-3 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-4 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-5 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-6 {
+            width: 33.33333333%;
+        }
+
+    }
+    
+    @media (max-width:767px) {
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid {
+            width: 50%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-2 {
+            width: 50%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-3 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-4 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-5 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-6 {
+            width: 33.33333333%;
+        }
+        .rentmy-plugin-manincontent table {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-details .images,
+        .rentmy-plugin-manincontent .rentmy-product-details .details {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width:575px) {
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-2 {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-3 {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-4 {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-5 {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-list .products .product-grid.product-grid-6 {
+            width: 100%;
+        }
+        .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-area a {
+            padding: 0 10px !important;
+            font-size: 10px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-progressbar {
+            margin: 0;
+        }
+        .rentmy-plugin-manincontent .rentmy-progressbar li {
+            font-size: 9px !important;
+        }
+        .rentmy-plugin-manincontent .checkout-header h2 {
+            font-size: 22px !important;
+        }
+        .rentmy-plugin-manincontent .back-continue-btn {
+            margin-bottom: 15px;
+        }
+        .rentmy-plugin-manincontent .rentmy-checkout-billing label,
+        .rentmy-plugin-manincontent .rentmy-checkout-fullfilment label,
+        .rentmy-plugin-manincontent .rentmy-checkout-payment label,
+        .rentmy-plugin-manincontent .checkout-complete label {
+            font-size: 14px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-checkout-payment .payment-type ul li {
+            width: 50%;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-details .details h1 {
+            font-size: 30px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-table table td img,
+        .rentmy-plugin-manincontent .rentmy-cart-form table td img,
+        .rentmy-plugin-manincontent .rentmy-cart-form table th img {
+            width: 40px;
+            padding: 0;
+            max-width: unset;
+            height: 40px;
+        }
+        .rentmy-plugin-manincontent .rentmy-cart-form .product-quantity {
+            width: 132px;
+            padding: 0;
+        }
+        .rentmy-plugin-manincontent .rentmy-table table th,
+        .rentmy-plugin-manincontent .rentmy-table table td,
+        .rentmy-plugin-manincontent .rentmy-cart-form table td,
+        .rentmy-plugin-manincontent .rentmy-cart-form table th {
+            font-size: 13px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-cart-form .size,
+        .rentmy-plugin-manincontent .rentmy-cart-form .quantity {
+            width: 68px;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="text"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="email"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="url"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="password"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="search"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="number"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="tel"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="range"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="date"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="month"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="week"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="time"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="datetime"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="datetime-local"],
+        .rentmy-plugin-manincontent .rentmy-product-details input[type="color"],
+        .rentmy-plugin-manincontent .rentmy-product-details textarea {
+            font-size: 13px !important;
+        }
+        .rentmy-plugin-manincontent .rentmy-product-details .daterange {
+            font-size: 13px !important;
+            display: inline-block;
+            width: 290px;
+        }
+    }
+    
+    .rentmy-plugin-manincontent .date-range-selection-change {
+        cursor: pointer;
+    }
+    /*-- product list layout2 --*/
+    
+    .rentmy-plugin-manincontent .rm-product-grid {
+        text-align: center;
+        padding: 0 0;
+        border: 1px solid #f2f3f8;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        transition: all .3s ease 0s;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-image {
+        position: relative;
+        transition: all .3s ease 0s;
+        border-bottom: 1px solid #f2f3f8;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-image a {
+        display: block;
+        box-shadow: none;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-image img {
+        width: 100%;
+        height: auto
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-pic-1 {
+        opacity: 1;
+        transition: all .3s ease-out 0s
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid:hover .rm-pic-1 {
+        opacity: 1
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn {
+        width: 150px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        opacity: 0;
+        transform: translateY(-50%) translateX(-50%);
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        z-index: 1;
+        transition: all .3s ease 0s
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid:hover .rm-view-cart-btn {
+        opacity: 1;
+        top: 50%
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li {
+        display: inline-block
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a {
+        color: #fff;
+        background-color: #111;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        margin: 0 2px;
+        display: block;
+        position: relative;
+        transition: all .3s ease-in-out;
+        box-shadow: none;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a:hover {
+        color: #fff;
+        background-color: #444;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a:after,
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a:before {
+        content: attr(data-tip);
+        color: #fff;
+        background-color: #000;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        padding: 1px 5px;
+        white-space: nowrap;
+        opacity: 0;
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        top: -30px
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a:after {
+        content: '';
+        height: 15px;
+        width: 15px;
+        border-radius: 0;
+        transform: translateX(-50%) rotate(45deg);
+        top: -20px;
+        z-index: -1
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a:hover:after,
+    .rentmy-plugin-manincontent .rm-product-grid .rm-view-cart-btn li a:hover:before {
+        opacity: 1
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-discount-label,
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-new-label {
+        color: #fff;
+        background-color: #ef5777;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 2px 7px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-discount-label {
+        background-color: #333;
+        left: auto;
+        right: 0
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .rm-product-content {
+        background-color: #f2f3f8;
+        text-align: center;
+        padding: 15px 10px;
+        margin: 0 auto;
+        z-index: 1;
+        transition: all .3s
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .title {
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: .5px;
+        text-transform: capitalize;
+        margin: 0 0 10px;
+        transition: all .3s ease 0s;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .title a {
+        color: #828282;
+        box-shadow: none !important;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .title a:hover,
+    .rentmy-plugin-manincontent .rm-product-grid:hover .title a {
+        color: #ef5777
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .price {
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-bottom: 8px;
+        text-align: center;
+        transition: all .3s;
+        line-height: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .price span {
+        display: inline-block
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .add-to-cart {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #333;
+    }
+    
+    .rentmy-plugin-manincontent .rm-product-grid .add-to-cart:hover {
+        color: #fff;
+        background-color: #444;
+    }
+    
+    @media only screen and (max-width:990px) {
+        .rentmy-plugin-manincontent .rm-product-grid {
+            margin-bottom: 30px
+        }
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .date-range-selection-active input {
+        height: 45px;
+        padding-left: 15px
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-cart-form .date-range-selection-active button {
+        height: 45px;
+        border-radius: 2px
+    }
+    
+    .rentmy-plugin-manincontent .date-range input,
+    .rentmy-plugin-manincontent .quantity .form-control {
+        width: 200px !important;
+        height: 40px !important;
+        box-shadow: none;
+        font-size: 13px;
+        border: 1px solid #eee;
+    }
+    
+    .rentmy-plugin-manincontent .signature-pad {
+        border: 1px solid #eee;
+        border-bottom: 2px solid black;
+    }
+    
+    .rentmy-plugin-manincontent .clear-signature {
+        cursor: pointer;
+        color: red;
+        text-decoration: underline;
+        float: right;
+    }
+    
+    .rentmy-plugin-manincontent .signature-pad-wrapper p {
+        margin-top: 20px;
+        width: 500px;
+    }
+    
+    .rentmy-plugin-manincontent #rentmy-rent-item {
+        margin-top: 20px;
+    }
+    /*slider css starts product detauls page*/
+    
+    .rentmy-plugin-manincontent .product-view-area {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .rentmy-plugin-manincontent .image-list li {
+        margin: 0;
+    }
+    
+    .rentmy-plugin-manincontent .product-view-image img,
+    .image-list img {
+        width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .product-view-image {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .product-view-image img.active {
+        display: block;
+        margin: 0 0 0.75rem 0;
+    }
+    
+    .rentmy-plugin-manincontent .image-list-area {
+        margin-right: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .image-list {
+        /*overflow: hidden;*/
+        width: 80px;
+        list-style: none;
+        position: relative;
+        margin-left: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .image-list li {
+        margin: 0;
+        position: relative;
+    }
+    
+    .rentmy-plugin-manincontent .active-viewimg::after {
+        content: " ";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border: 1px solid #fff;
+    }
+    
+    .rentmy-plugin-manincontent .image-list li:nth-child(3) {
+        margin: 0;
+    }
+    
+    .rentmy-plugin-manincontent .image-list img {
+        height: 80px;
+        width: 80px !important;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+        border: 1px solid #f2f3f8 !important;
+        padding: 0 !important;
+        object-fit: contain;
+    }
+    
+    .rentmy-plugin-manincontent .image-list img:hover {
+        opacity: 0.7;
+    }
+    
+    @keyframes fadeImg {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @media (max-width: 1350px) {
+        .rentmy-plugin-manincontent .image-list {
+            width: 80px;
+        }
+        .rentmy-plugin-manincontent .image-list img {
+            height: 74px;
+        }
+    }
+    
+    @media (max-width: 1199px) {
+        .rentmy-plugin-manincontent .image-list {
+            width: 80px;
+        }
+    }
+    
+    @media (max-width: 575px) {
+        .rentmy-plugin-manincontent .image-list img {
+            height: 60px;
+            width: 60px;
+        }
+    }
+    
+    .rentmy-plugin-manincontent .addon-small-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border: 2px solid #f2f3f8;
+    }
+    /*slider css ends*/
+    
+    #toast-container .toast,
+    #toast-container>div {
+        width: auto !important;
+        max-width: 100% !important;
+    }
+    
+    .toast-message,
+    .toast-title {
+        font-size: 15px !important;
+    }
+    /*-- pop-up-content --*/
+    
+    .rentmy-plugin-manincontent .pop-up-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(0.9);
+        -moz-transform: translate(-50%, -50%) scale(0.9);
+        -ms-transform: translate(-50%, -50%) scale(0.9);
+        -o-transform: translate(-50%, -50%) scale(0.9);
+        transform: translate(-50%, -50%) scale(0.9);
+        box-shadow: 0 0px 60px 1px rgba(51, 77, 136, 0.08);
+        border: 1px solid #f2f3f8;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        z-index: 99;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media (min-width: 768px) {
+        .rentmy-plugin-manincontent .pop-up-content {
+            width: calc(100% - 40px);
+            height: auto;
+            max-width: 900px;
+        }
+    }
+    
+    .rentmy-plugin-manincontent .pop-up-content .content {
+        width: 100%;
+        max-width: 900px;
+        position: relative;
+        min-height: 100vh;
+    }
+    
+    .rentmy-plugin-manincontent .pop-up-content .content .popup-container {
+        padding: 20px;
+    }
+    
+    @media (min-width: 768px) {
+        .rentmy-plugin-manincontent .pop-up-content .content {
+            min-height: inherit;
+        }
+    }
+    
+    .rentmy-plugin-manincontent .pop-up-content .content .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+        color: #3e4146;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    
+    .rentmy-plugin-manincontent .pop-up-content .content .close:hover {
+        cursor: pointer;
+        color: #f66867;
+    }
+    
+    .rentmy-plugin-manincontent .popup-conetent-pragraph-inner p span {
+        font-size: 15px !important;
+    }
+    
+    .rentmy-plugin-manincontent .pop-up-content.open {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .rentmy-plugin-manincontent .pop-up-content.open img {
+        opacity: 1;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        -webkit-transition-delay: 0.3s;
+        -moz-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    
+    .rentmy-plugin-manincontent .popup-title {
+        height: 55px;
+        border-bottom: 1px solid #f2f3f8;
+        padding: 0 20px;
+    }
+    
+    .rentmy-plugin-manincontent .popup-title h1 {
+        font-size: 25px;
+        line-height: 55px;
+        margin: 0;
+    }
+    
+    .rentmy-plugin-manincontent .popup-conetent-pragraph {
+        background-color: #f6f8fb;
+        border-color: #f6f8fb;
+        height: 400px;
+        text-align: left;
+        padding: 15px 0;
+    }
+    
+    .rentmy-plugin-manincontent .popup-conetent-pragraph-inner {
+        color: #555 !important;
+        line-height: 25px;
+        overflow: auto;
+        height: 380px;
+        padding: 0 10px 15px 20px;
+        font-size: 15px;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background: #f2f3f8;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #ddd;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    .rentmy-plugin-manincontent .popup-footer {
+        padding: 20px 0 0;
+    }
+    
+    .rentmy-plugin-manincontent .popup-checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 18px !important;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .rentmy-plugin-manincontent .popup-checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    .rentmy-plugin-manincontent .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+    }
+    
+    .rentmy-plugin-manincontent .popup-checkbox-container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+    
+    .rentmy-plugin-manincontent .popup-checkbox-container input:checked~.checkmark {
+        background-color: #333;
+    }
+    
+    .rentmy-plugin-manincontent .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .popup-checkbox-container input:checked~.checkmark:after {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .popup-checkbox-container .checkmark:after {
+        left: 8px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .rentmy-plugin-manincontent .popup-btn-area {
+        padding-top: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .popup-back-btn {
+        background-color: #333;
+        padding: 10px 20px;
+        color: #fff;
+        outline: 0;
+        border: none;
+        font-size: 15px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .popup-continue-btn {
+        background-color: #333;
+        padding: 10px 20px;
+        color: #fff;
+        outline: 0;
+        border: none;
+        font-size: 15px;
+        border-radius: 2px;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .popup-continue-didabledbtn {
+        padding: 10px 20px;
+        color: #fff;
+        outline: 0;
+        border: none;
+        font-size: 15px;
+        border-radius: 2px;
+        float: right;
+        cursor: pointer;
+        background: #333;
+    }
+    
+    .rentmy-plugin-manincontent .popup-continue-didabledbtn[disabled],
+    .rentmy-plugin-manincontent .popup-continue-didabledbtn[type=button][disabled],
+    .rentmy-plugin-manincontent .popup-continue-didabledbtn[type=reset][disabled],
+    .rentmy-plugin-manincontent .popup-continue-didabledbtn[type=submit][disabled] {
+        opacity: .5;
+        cursor: no-drop;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.related-producst-list .products .product-grid {
+        width: 33.3333333%;
+        padding: 0 15px !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .rentmy-plugin-manincontent .related-product-title {
+        height: 55px;
+        background-color: #f2f3f8;
+        line-height: 55px;
+        padding: 0 15px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .related-producst-list {
+        float: left;
+        width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .related-product-title h4 {
+        line-height: 55px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.related-producst-list .products .product-grid-body .button {
+        font-size: 11px;
+    }
+    /*related product cart*/
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid {
+        width: 16.3333333%;
+        padding: 0 10px !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid h4 {
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid .price {
+        margin-bottom: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .related-product-title {
+        height: 55px;
+        background-color: #f2f3f8;
+        line-height: 55px;
+        padding: 0 15px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid-body .button i {
+        line-height: 42px;
+        font-size: 18px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid .product-grid-img {
+        height: 96px;
+        padding: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid .product-grid-img img {
+        width: 100%;
+        height: 95px;
+        object-fit: contain;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories {
+        padding: 0 15px 15px 15px;
+        margin: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories {
+        padding: 0 !important;
+        width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories li {
+        padding: 0;
+        margin-left: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-list-children-wrapper {
+        margin-left: 0;
+        padding: 0 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories li.rentmy-list-children-wrapper a {
+        color: #666;
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .rent-my-list-link .dashicons,
+    .rentmy-parent-category .dashicons {
+        margin-top: 4px;
+        font-size: 13px;
+        float: right;
+        text-decoration: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories a {
+        text-decoration: none !important;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area {
+        box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area form {
+        margin: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area form table {
+        margin: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area form h5,
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area form h6 {
+        margin: 0;
+    }
+    
+    .rentmy-plugin-manincontent .cart-checkout-area {
+        padding: 0;
+    }
+    
+    .rentmy-plugin-manincontent #rentmy-search-form .cart-checkout-area {
+        padding: 22px 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area br {
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .cart-checkout-area button[type="submit"] {
+        margin-bottom: 0;
+    }
+    
+    .rentmy-plugin-manincontent .dashicons.dashicons-arrow-down-alt2 {
+        float: right;
+        font-size: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-list-children-sub {
+        padding-left: 25px !important;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-list-children-sub:nth-child(2) {
+        border-top: 1px solid #eee;
+        margin-top: 6px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-list-children-sub:last-child {
+        border-bottom: none;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-plugin-categorytagsearch-area h3 {
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .rentmy-plugin-manincontent .filter-rentmy {
+        padding: 10px 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .price-rentmy {
+        padding: 15px 15px !important;
+    }
+    
+    .rentmy-plugin-manincontent .type-area {
+        padding: 15px 15px 5px !important;
+    }
+    
+    .rentmy-plugin-manincontent .filter-rentmy .tag-filter {
+        padding: 5px 15px;
+    }
+    /*ends*/
+    /*type and price filter option*/
+    
+    .rentmy-plugin-manincontent .lbtn-sm {
+        padding: 10px 15px;
+        font-size: 14px;
+        border: none !important;
+        border-radius: 2px;
+    }
+    
+    .rentmy-plugin-manincontent .radius {
+        border-radius: 50px;
+    }
+    
+    .rentmy-plugin-manincontent .button {
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 0;
+        text-align: center;
+        transition: all .5s;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        letter-spacing: 0.2px;
+        /*background: transparent;*/
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        padding: 0 20px;
+    }
+    
+    .rentmy-plugin-manincontent .cart-body {
+        position:absolute;
+        z-index: 999999999;
+    }
+
+    .rentmy-plugin-manincontent .cart-body .button {
+        text-transform: capitalize;
+        padding: 8px 20px;
+        border-radius: 4px;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control {
+        margin-bottom: 10px;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control-label {
+        font-weight: 300 !important;
+    }
+    /* The container */
+    
+    .rentmy-plugin-manincontent .type-area-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-container:hover input~.type-area-checkmark {
+        background-color: #ccc;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-container input:checked~.type-area-checkmark {
+        background-color: #333;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-container input:checked~.type-area-checkmark:after {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .type-area-container .type-area-checkmark:after {
+        top: 7px;
+        left: 7px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    }
+    
+    .rentmy-plugin-manincontent .price-rentmy .form-row {
+        margin-bottom: 0;
+    }
+    
+    .rentmy-plugin-manincontent .value-price-filter {
+        font-size: 14px;
+        margin-bottom: 0 !important;
+    }
+    
+    .rentmy-plugin-manincontent .value-price-filter:active,
+    .rentmy-plugin-manincontent .value-price-filter:focus {
+        box-shadow: none;
+        border: 1px solid #eee;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories ul {
+        list-style: none;
+        margin-left: 0 !important;
+        padding: 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-categories ul li a {
+        padding-left: 30px !important;
+    }
+    
+    .rentmy-plugin-manincontent .shipping-choose-label {
+        padding: 15px 0;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container.radiolist-container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f2f3f8;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-fulfillment-message .radio-container.radiolist-container .checkmark {
+        top: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .shipping-choose-label {
+        color: #111;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .shipping-method-loader {
+        margin: 0 auto;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .rentmy-radio-text,
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .rentmy-radio-price {
+        display: inline-block;
+        width: 100%;
+        font-weight: 600;
+        font-size: 15px !important;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .rentmy-radio-price,
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .rentmy-radio-day,
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .rentmy-radio-date {
+        font-size: 13px;
+    }
+    
+    .rentmy-plugin-manincontent .radio-container.radiolist-container .rentmy-radio-price {
+        position: absolute;
+        width: unset;
+        right: 0;
+        top: 23px;
+    }
+    
+    .rentmy-plugin-manincontent .loader-main-area {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .custom-control.custom-radio label {
+        line-height: 25px !important;
+        padding-left: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .custom-control-label::before {
+        width: 22px;
+        height: 22px;
+        left: -15px !important;
+        top: 2px !important;
+        background-color: #e2e3e8;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-payment .custom-control-label::after {
+        background-color: #fff;
+        border-radius: 50px;
+        top: 9px;
+        left: -8px;
+        width: 8px;
+        height: 8px;
+    }
+    
+    .rentmy-plugin-manincontent .rm-card-payment-container h6 {
+        padding-bottom: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rm-card-payment-container .tamount {
+        font-size: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-checkout-billing input,
+    .rentmy-plugin-manincontent .rentmy-checkout-billing select,
+    .rentmy-plugin-manincontent .rentmy-checkout-billing textarea,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment input,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment select,
+    .rentmy-plugin-manincontent .rentmy-checkout-fullfilment textarea,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment input,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment select,
+    .rentmy-plugin-manincontent .rentmy-checkout-payment textarea,
+    .rentmy-plugin-manincontent .checkout-complete input,
+    .rentmy-plugin-manincontent .checkout-complete select,
+    .checkout-complete textarea {
+        font-size: 15px;
+        outline: 0;
+        box-shadow: none;
+    }
+    
+    .rentmy-plugin-manincontent .rm-instore-container .radio-container {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .rentmy-plugin-manincontent .cart_p .pre,
+    .rentmy-plugin-manincontent .cart_p .amount {
+        font-size: 14px;
+    }
+    
+    .rentmy-plugin-manincontent .table.cart tr td:nth-child(1) {
+        padding-left: 15px;
+    }
+    
+    .rentmy-plugin-manincontent .table.cart tr td:nth-child(2) {
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    .rentmy-plugin-manincontent .text-right {
+        text-align: right;
+    }
+    
+    .rentmy-plugin-manincontent #rm_quantity {
+        text-align: center;
+    }
+    
+    .rentmy-plugin-manincontent .image-item,
+    .rentmy-plugin-manincontent .view-image {
+        outline: none;
+    }
+    /*ends*/
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .rm-rental-daterange label {
+        width: auto;
+        display: inline-block;
+    }
+    
+    .rentmy-plugin-manincontent .rentmy-product-details .daterange {
+        width: 330px;
+        max-width: 100%;
+    }
+    
+    .rentmy-plugin-manincontent .checkout-continue-btn:disabled {
+        opacity: 0.6 !important;
+    }
+    /*-- terms and condition modal css --*/
+    
+    .rentmy-checkout-content .modal {
+        z-index: 9999;
+    }
+    
+    .rentmy-checkout-content .modal-dialog {
+        max-width: 900px;
+    }
+    
+    .rentmy-checkout-content .modal-dialog {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: calc(100% - 1rem);
+    }
+    
+    @media (min-width: 576px) {
+        .rentmy-checkout-content .modal-dialog {
+            min-height: calc(100% - 3.5rem);
+        }
+    }
+    
+    .rentmy-checkout-content .close {
+        float: right;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+        position: absolute;
+        right: 20px;
+    }
+    
+    .rentmy-checkout-content .close:focus,
+    .rentmy-checkout-content .close:hover {
+        outline: 0;
+    }
+    
+    .rentmy-checkout-content .modal-footer .btn.btn-default,
+    .rentmy-checkout-content .modal-footer .btn.btn-secondary {
+        background-color: #041531;
+        border: 4px;
+        border-radius: 2px;
+        color: #fff;
+    }
+    
+    .rentmy-checkout-content .modal-footer .btn:focus,
+    .rentmy-checkout-content .modal-footer .btn:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    
+    .rentmy-checkout-content .modal-body {
+        background-color: #f6f8fb;
+        border-color: #f6f8fb;
+        height: 380px;
+        text-align: left;
+        overflow: auto;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .rentmy-checkout-content .modal-body {
+            height: 350px;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        .rentmy-checkout-content .modal-body {
+            height: 280px;
+        }
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px) {
+        .rentmy-checkout-content .modal-body {
+            height: 250px;
+        }
+        .modal-title {
+            font-size: 20px;
+        }
+    }
+    
+    @media (min-width: 200px) and (max-width: 575px) {
+        .rentmy-checkout-content .modal-body {
+            height: 200px;
+        }
+        .modal-title {
+            font-size: 16px;
+        }
+    }
+    /*-- customer login modal css --*/
+    
+    .rentmy-customer-login {
+        width: 50px;
+        height: 50px;
+        display: block;
+        border-radius: 50%;
+        background-color: #007bff8a;
+        color: #fff;
+        position: fixed;
+        content: icon;
+        top: 220px;
+        right: 20px;
+        line-height: 45px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .rentmy-customer-login i {
+        font-size: 12px;
+    }
+    
+    .rentmy-customer-login i {
+        color: #fff;
+    }
+    
+    .rentmy-customer-login-modal.fade {
+        opacity: 1 !important;     
+    }
+    
+    .rentmy-customer-login-modal .modal-dialog {
+        max-width: 600px;
+    }
+    
+    .rentmy-customer-login-modal .modal-body {
+        padding: 0;
+    }
+    
+    .rentmy-customer-login-modal .login-register-content {
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .rentmy-customer-login-modal .card {
+        border: none !important;
+        width: 100%;
+    }
+    
+    .rentmy-customer-login-modal .nav.nav-pills,
+    .rentmy-customer-login-modal .nav.nav-tabs {
+        margin-bottom: 0;
+        background-color: #212529;
+    }
+    
+    .rentmy-customer-login-modal .login-register-content .nav-tabs .nav-item {
+        width: 50%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-bottom: none;
+        background-color: #edf1f5;
+        border: none !important;
+        font-weight: 500 !important;
+        color: #333;
+        border-radius: 0;
+        text-align: center;
+        padding: 14px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .rentmy-customer-login-modal .nav-tabs .nav-item.show .nav-link,
+    .rentmy-customer-login-modal .nav-tabs .nav-link.active {
+        background-color: #212529!important;
+        border: none !important;
+        color: #fff !important;
+        text-align: center;
+    }
+    
+    .rentmy-customer-login-modal .nav-link {
+        padding: 1rem 1rem;
+    }
+    
+    .rentmy-customer-login-modal .tab-content {
+        padding-bottom: 20px;
+    }
+    
+    .rentmy-customer-login-modal .nav-tabs {
+        border-bottom: none;
+    }
+    
+    .rentmy-customer-login-modal .login-title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .rentmy-customer-login-modal .login-title h1 {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #222;
+        letter-spacing: 1px;
+        padding-top: 5px;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 0;
+    }
+    
+    .rentmy-customer-login-modal .loginform a {
+        font-size: 11px;
+        color: #7f8c8d;
+    }
+    
+    .rentmy-customer-login-modal .loginform a:hover {
+        text-decoration: underline;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body .input-field {
+        width: 100%;
+        height: auto;
+        padding: 13px 15px 13px 20px;
+        font-size: 15px;
+        color: #7f8c8d;
+        background: #edf1f5;
+        border: 1px solid #edf1f5;
+        outline: 0;
+        border-radius: 3px;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body input:hover,
+    .rentmy-customer-login-modal .userlogin-body input:focus {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .rentmy-customer-login-modal .login {
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        background-color: #212529;
+        color: #fff;
+        border: 0px;
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        outline: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .rentmy-customer-login-modal .login:focus,
+    .rentmy-customer-login-modal .login:hover {
+        background-color: #e7e8e9;
+        outline: 0;
+        border: none;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body .custom-control label {
+        color: #555 !important;
+        font-size: 14px;
+        font-weight: 400 !important;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body .custom-control a {
+        color: #555 !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        text-decoration: underline;
+        padding: 0;
+        position: unset;
+        letter-spacing: 0;
+        display: inline-block !important;
+        text-transform: unset;
+    }
+    
+    .rentmy-customer-login-modal .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+        background-color: #212529;
+    }
+    
+    .rentmy-customer-login-modal .login-close {
+        position: absolute;
+        top: -16px;
+        right: -10px;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        z-index: 9;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .rentmy-customer-login-modal .storelogin-content {
+        text-align: center;
+        padding-top: 25px;
+    }
+    
+    .rentmy-customer-login-modal .onlinestore-create-account {
+        width: 100%;
+        float: left;
+        padding: 20px 90px 5px;
+        text-align: center;
+    }
+    
+    .rentmy-customer-login-modal .onlinestore-create-account a {
+        cursor: pointer;
+        text-decoration: underline !important;
+    }
+    
+    .rentmy-customer-login-modal .onlinestore-create-account a:hover {
+        text-decoration: underline !important;
+        color: #888;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-box {
+        padding: 0 90px;
+        transition: all .3s;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body .input-field {
+        width: 100%;
+        height: auto;
+        padding: 13px 15px 13px 20px;
+        font-size: 15px;
+        color: #7f8c8d;
+        background: #edf1f5;
+        border: 1px solid #edf1f5;
+        outline: 0;
+        border-radius: 3px;
+    }
+    
+    .rentmy-customer-login-modal .login {
+        width: 130px;
+        height: 46px;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        background-color: #212529;
+        color: #fff;
+        border: 0px;
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        outline: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .rentmy-customer-login-modal .loginform a {
+        font-size: 14px;
+        color: #7f8c8d;
+        padding-top: 12px;
+        text-decoration: none !important;
+        cursor: pointer !important;
+    }
+    
+    .rentmy-customer-login-modal .loginform a:hover {
+        text-decoration: unset !important;
+    }
+    
+    .rentmy-customer-login-modal .usersignup-box {
+        padding: 0 20px !important;
+        transition: all .3s;
+    }
+    
+    .rentmy-customer-login-modal .userlogin-body .form-control,
+    .rentmy-customer-login-modal .userlogin-body .input-field {
+        width: 100%;
+        height: 50px;
+        padding: 13px 15px 13px 20px;
+        font-size: 15px;
+        color: #7f8c8d;
+        background: #edf1f5;
+        border: 1px solid #edf1f5;
+        outline: 0;
+        border-radius: 3px;
+    }
+    
+    .rentmy-customer-login-modal .login-close {
+        position: absolute;
+        top: -16px;
+        right: -10px;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        z-index: 9;
+        cursor: pointer;
+    }
+
+
+.rentmy-customer-login-element {
+    opacity: 1 !important;
+    display: block;
+    max-width: 600px;
+}
+
+.rentmy-customer-login-element .modal-body {
+    padding: 0;
+}
+
+.rentmy-customer-login-element .login-register-content {
+    width: 100%;
+    box-shadow: none;
+}
+
+.rentmy-customer-login-element .card {
+    border: none !important;
+    width: 100%;
+}
+
+.rentmy-customer-login-element nav-tabs {
+    margin-bottom: 0;
+    background-color: #212529;
+    width: 100%;
+}
+
+.rentmy-customer-login-element .login-register-content .nav-tabs .nav-item {
+    width: 50% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-bottom: none;
+    background-color: #edf1f5;
+    border: none !important;
+    font-weight: 500 !important;
+    color: #333;
+    border-radius: 0;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.rentmy-customer-login-element .nav-tabs .nav-item.show .nav-link,
+.rentmy-customer-login-element .nav-tabs .nav-link.active {
+    background-color: #212529 !important;
+    border: none !important;
+    color: #fff !important;
+    text-align: center;
+}
+
+.rentmy-customer-login-element .nav-link {
+    padding: 1rem 1rem;
+}
+
+.rentmy-customer-login-element .tab-content {
+    padding-bottom: 20px;
+}
+
+.rentmy-customer-login-element .nav-tabs {
+    border-bottom: none;
+}
+
+.rentmy-customer-login-element .login-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.rentmy-customer-login-element .login-title h1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.rentmy-customer-login-element .userlogin-body {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 0;
+}
+
+.rentmy-customer-login-element .loginform a {
+    font-size: 11px;
+    color: #7f8c8d;
+}
+
+.rentmy-customer-login-element .loginform a:hover {
+    text-decoration: underline;
+}
+
+.rentmy-customer-login-element .userlogin-body .input-field {
+    width: 100%;
+    height: auto;
+    padding: 13px 15px 13px 20px;
+    font-size: 15px;
+    color: #7f8c8d;
+    background: #edf1f5;
+    border: 1px solid #edf1f5;
+    outline: 0;
+    border-radius: 3px;
+}
+
+.rentmy-customer-login-element .userlogin-body input:hover,
+.rentmy-customer-login-element .userlogin-body input:focus {
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+
+.rentmy-customer-login-element .login {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #212529;
+    color: #fff;
+    border: 0px;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.rentmy-customer-login-element .login:focus,
+.rentmy-customer-login-element .login:hover {
+    background-color: #e7e8e9;
+    outline: 0;
+    border: none;
+}
+
+.rentmy-customer-login-element .userlogin-body .custom-control label {
+    color: #555 !important;
+    font-size: 14px;
+    font-weight: 400 !important;
+}
+
+.rentmy-customer-login-element .userlogin-body .custom-control a {
+    color: #555 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    text-decoration: underline;
+    padding: 0;
+    position: unset;
+    letter-spacing: 0;
+    display: inline-block !important;
+    text-transform: unset;
+}
+
+.rentmy-customer-login-element .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #212529;
+}
+
+.rentmy-customer-login-element .login-close {
+    position: absolute;
+    top: -16px;
+    right: -10px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 9;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.rentmy-customer-login-element .storelogin-content {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.rentmy-customer-login-element .onlinestore-create-account {
+    width: 100%;
+    float: left;
+    padding: 20px 90px 5px;
+    text-align: center;
+}
+
+.rentmy-customer-login-element .onlinestore-create-account a {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.rentmy-customer-login-element .onlinestore-create-account a:hover {
+    text-decoration: underline !important;
+    color: #888;
+}
+
+.rentmy-customer-login-element .userlogin-box {
+    padding: 0 90px;
+    transition: all .3s;
+}
+
+.rentmy-customer-login-element .userlogin-body .input-field {
+    width: 100%;
+    height: auto;
+    padding: 13px 15px 13px 20px;
+    font-size: 15px;
+    color: #7f8c8d;
+    background: #edf1f5;
+    border: 1px solid #edf1f5;
+    outline: 0;
+    border-radius: 3px;
+}
+
+.rentmy-customer-login-element .login {
+    width: 130px;
+    height: 46px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #212529;
+    color: #fff;
+    border: 0px;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.rentmy-customer-login-element .loginform a {
+    font-size: 14px;
+    color: #7f8c8d;
+    padding-top: 12px;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.rentmy-customer-login-element .loginform a:hover {
+    text-decoration: unset !important;
+}
+
+.rentmy-customer-login-element .usersignup-box {
+    padding: 0 20px !important;
+    transition: all .3s;
+}
+
+.rentmy-customer-login-element .userlogin-body .form-control,
+.rentmy-customer-login-element .userlogin-body .input-field {
+    width: 100%;
+    height: 50px;
+    padding: 13px 15px 13px 20px;
+    font-size: 15px;
+    color: #7f8c8d;
+    background: #edf1f5;
+    border: 1px solid #edf1f5;
+    outline: 0;
+    border-radius: 3px;
+}
+
+.rentmy-customer-login-element .login-close {
+    position: absolute;
+    top: -16px;
+    right: -10px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 9;
+    cursor: pointer;
+}
+    
+    
+    @media only screen and (min-width: 1168px) {
+        .entry .entry-content>*,
+        .entry .entry-summary>*,
+        .entry .entry-summary>.wp-block-group>.wp-block-group__inner-container>*,
+        .entry .entry-content>.wp-block-group>.wp-block-group__inner-container>* {
+            max-width: 100% !important;
+        }
+    }
+    /*-- profile page css  --*/
+    
+    .rentmy-profile-section {
+        padding-top: 50px;
+        min-height: 862px;
+    }
+    
+    .rentmy-profile-section .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside {
+        background-color: #fff;
+        margin-top: 0;
+        box-shadow: 0 0 20px 8px rgba(51, 77, 136, 0.05);
+        border-radius: 3px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body {
+        padding-bottom: 0px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body h5 {
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body ul {
+        padding-top: 15px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body ul li {
+        border-bottom: 1px solid #f2f3f8;
+        transition: all .3s;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body ul li a {
+        font-weight: 500;
+        color: #666a7b;
+        display: block;
+        font-size: 15px;
+        padding-left: 10px;
+        border-left: 1px solid #fff;
+        transition: all .3s;
+        padding: 12px 15px;
+        text-decoration: none;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body ul li a i {
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body ul li a:hover {
+        font-weight: 500 !important;
+        background-color: #f2f3f8;
+    }
+    
+    .rentmy-profile-section .nav-pills .nav-link.active,
+    .rentmy-profile-section .nav-pills .show>.nav-link {
+        font-weight: 500 !important;
+        background-color: #f2f3f8;
+        color: #666a7b;
+    }
+    
+    .rentmy-profile-section .is-active i {
+        font-weight: bold;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-leftside-body {
+        padding-bottom: 0px;
+        padding: 15px;
+    }
+    
+    .rentmy-profile-section .profile-rowarea {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .rentmy-profile-section .profile-rowarea {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    
+    .rentmy-profile-section .userleft-side {
+        width: 330px;
+        padding: 0 15px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    
+    .rentmy-profile-section .userright-side {
+        padding: 0 15px;
+        -webkit-box-flex: 1;
+        flex: 1 auto;
+        -ms-flex: 1 0 0px;
+        min-width: 0;
+        max-width: 100%;
+    }
+    
+    @media ( max-width: 991px) {
+        .rentmy-profile-section .userleft-side {
+            width: 280px;
+        }
+        .rentmy-profile-section .userright-side {
+            max-width: 100%;
+        }
+    }
+    
+    @media ( max-width: 767px) {
+        .rentmy-profile-section .userleft-side {
+            width: 220px;
+        }
+        .rentmy-profile-section .userright-side {
+            max-width: 100%;
+        }
+        .rentmy-profile-section .rentmy-profile-leftside-body ul li a {
+            font-size: 14px;
+        }
+        .rentmy-profile-section .rentmy-profile-leftside-body ul li a i {
+            font-size: 18px;
+            margin-right: 5px;
+            font-size: 15px;
+        }
+    }
+    
+    @media ( max-width: 575px) {
+        .rentmy-profile-section .profile-rowarea {
+            display: unset;
+            flex-direction: unset;
+        }
+        .rentmy-profile-section .profile-rowarea {
+            flex: unset;
+        }
+        .rentmy-profile-section .userleft-side {
+            width: 100%;
+        }
+        .rentmy-profile-section .userright-side {
+            margin-top: 20px;
+        }
+    }
+    
+    .rentmy-profile-section .profile-info-title {
+        height: 50px;
+        border-bottom: 1px solid #f2f3f8;
+        position: relative;
+    }
+    
+    .rentmy-profile-section .profile-info-title h4 {
+        line-height: 50px;
+        padding-left: 20px;
+        font-weight: 500;
+        color: #595d6e;
+        margin: 0;
+        font-size: 22px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-body {
+        padding: 20px;
+    }
+    
+    .rentmy-profile-section input {
+        padding: 20px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-rightside {
+        background-color: #fff;
+        min-height: 100px;
+        box-shadow: 0 0 20px 8px rgba(51, 77, 136, 0.05);
+        border-radius: 3px;
+    }
+    
+    .rentmy-profile-section .account-page-title h4 {
+        padding: 20px 0;
+        font-weight: 400;
+        color: #595d6e;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item {
+        width: 32.33333%;
+        display: inline-block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        padding-right: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-itemlist-100 .rentmy-profile-item {
+        width: 100% !important;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item-title {
+        color: #424242;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item-info {
+        color: #74788d;
+        font-size: 14px;
+        padding-top: 0;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item-info i {
+        width: 12px;
+        text-align: center;
+    }
+    
+    .rentmy-profile-section .profile-email {
+        color: #74788d;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item textarea,
+    .rentmy-profile-section .rentmy-profile-item input {
+        height: 38px;
+        width: 100%;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item textarea:focus,
+    .rentmy-profile-section .rentmy-profile-item input:focus {
+        box-shadow: none;
+        border: 1px solid #888;
+    }
+    
+    .rentmy-profile-section .profile-edit-btn {
+        background-color: #333;
+        color: #fff;
+        border-radius: 2px;
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        padding: 6px 15px;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .profile-edit-btn:hover {
+        color: #fff;
+    }
+    
+    .rentmy-profile-section .invalid {
+        color: red;
+    }
+    
+    .rentmy-profile-section .address-title {
+        height: 40px;
+        border-bottom: 1px solid #f2f3f8;
+        padding: 5px 0;
+    }
+    
+    .rentmy-profile-section .address-title h5 {
+        display: inline-block;
+        color: #595d6e;
+        margin: 0;
+        font-weight: 500;
+    }
+    
+    .rentmy-profile-section .profile-address-list h5 i {
+        font-size: 18px;
+    }
+    
+    .rentmy-profile-section .biling-address-edit {
+        background-color: transparent !important;
+        color: #bdbcbc;
+        margin-top: -12px;
+        position: relative;
+        z-index: 1;
+        font-size: 14px;
+    }
+    
+    .rentmy-profile-section .profile-address-list .form-group .biling-address-edit:hover {
+        color: #888;
+    }
+    
+    .rentmy-profile-section .profile-address-list .form-group {
+        margin-bottom: 5px !important;
+        margin-top: 5px;
+    }
+    
+    .rentmy-profile-section .profile-address-list .form-group label {
+        color: #74788d!important;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .profile-address-list .form-group span {
+        display: inline-block;
+        font-size: 17px;
+    }
+    
+    .rentmy-profile-section .profile-address-list .form-group span {
+        color: #595d6e;
+    }
+    
+    .rentmy-profile-section .biling-address-add {
+        background-color: #595d6e;
+        color: #fff;
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    
+    .rentmy-profile-section .biling-address-add:hover {
+        color: #fff;
+    }
+    
+    .rentmy-profile-section .profile-info h2 {
+        font-size: 25px;
+        color: #595d6e;
+        margin: 0;
+    }
+    
+    .rentmy-profile-section .address-title {
+        padding: 0 20px;
+    }
+    
+    .rentmy-profile-section .address-body {
+        padding: 0 20px;
+    }
+    
+    .rentmy-profile-section label {
+        font-weight: 500;
+        color: #74788d !important;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .form-control,
+    .rentmy-profile-section input {
+        border: 1px solid #f2f3f8;
+        color: #7e7f86 !important;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .form-control::placeholder,
+    .rentmy-profile-section input::placeholder {
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-item-title {
+        color: #74788d;
+    }
+    
+    .rentmy-profile-section .joblist-box {
+        background-image: linear-gradient(to right, #9B468A, #6D1987);
+    }
+    
+    .rentmy-profile-section .catalog-box {
+        background-image: linear-gradient(to right, #2FA8A8, #1F7F78);
+    }
+    
+    .rentmy-profile-section .order-history-box {
+        background-image: linear-gradient(to right, #3AA8CD, #2698B4);
+    }
+    
+    .rentmy-profile-section .dashboard-box {
+        display: table;
+        width: 100%;
+        min-height: 150px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.10);
+        cursor: pointer;
+        padding: 15px;
+    }
+    
+    .rentmy-profile-section .inventory-box span i {
+        color: #A94BAD;
+    }
+    
+    .rentmy-profile-section .dashboard-box span i {
+        font-size: 100px;
+        color: #fff;
+    }
+    
+    .rentmy-profile-section .dashboard-box h5 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        font-size: 25px;
+        font-weight: 400;
+        color: #EEFBFB;
+        line-height: 35px;
+        padding-right: 10px;
+    }
+    
+    @media (max-width: 767px) {
+        .rentmy-profile-section .profile-info-title h4 {
+            font-size: 16px;
+        }
+        .rentmy-profile-section .profile-edit-btn {
+            font-size: 12px;
+        }
+        .rentmy-profile-section .profile-info h2 {
+            font-size: 20px;
+        }
+        .rentmy-profile-section .rentmy-profile-item-info {
+            font-size: 13px;
+        }
+        .rentmy-profile-section .address-title h5 {
+            font-size: 16px;
+        }
+        .rentmy-profile-section .profile-address-list .form-group span {
+            font-size: 16px;
+        }
+        .rentmy-profile-section .profile-address-list .form-group label {
+            font-size: 13px;
+        }
+    }
+    
+    .rentmy-profile-section .card-header {
+        height: 45px;
+        border-bottom: 1px solid #f2f3f8;
+    }
+    
+    .rentmy-profile-section .card-header h4 {
+        line-height: 45px;
+        padding-left: 15px;
+        color: #595d6e;
+    }
+    
+    .rentmy-profile-section .card-header .address-close {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .rentmy-profile-section .red {
+        color: red;
+    }
+    
+    .rentmy-profile-section .card-body form label {
+        margin-bottom: 0 !important;
+    }
+    
+    .rentmy-profile-section label {
+        font-weight: 500;
+        color: #74788d !important;
+        margin-bottom: 0;
+    }
+    
+    .rentmy-profile-section .form-control,
+    .rentmy-profile-section input {
+        border: 1px solid #f2f3f8;
+        color: #878ba0 !important;
+    }
+    
+    .rentmy-profile-section .drop {
+        width: 100%;
+        padding: 10px;
+        min-height: 150px;
+        border: 2px dashed #DADFE3;
+        overflow: hidden;
+        text-align: center;
+        background: white;
+        transition: all 0.5s ease-out;
+        margin: 0px;
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .drop .cont {
+        padding-top: 10px;
+        width: 100%;
+        color: #8E99A5;
+        transition: all 0.5s ease-out;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .rentmy-profile-section .drop .cont i {
+        font-size: 150px;
+        color: #efefef;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
+    }
+    
+    .rentmy-profile-section .drop .cont .tit,
+    .rentmy-profile-section .drop .cont .desc {
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+    }
+    
+    .rentmy-profile-section .drop .cont .tit {
+        font-size: 150%;
+    }
+    
+    .rentmy-profile-section .drop .cont .desc {
+        color: #A4AEBB;
+    }
+    
+    .rentmy-profile-section .drop input {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: red;
+        opacity: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    /*-- profile order list css  --*/
+    
+    .rentmy-profile-section .table td,
+    .rentmy-profile-section .table th {
+        padding: 15px 25px;
+        vertical-align: top;
+        border: none;
+        border-top: 1px solid #eff0f5;
+        text-align: center;
+        font-size: 15px !important;
+        word-break: unset;
+    }
+    
+    .rentmy-profile-section table tr th {
+        color: #686a73;
+    }
+    
+    .rentmy-profile-section .profile-body tr th {
+        background-color: #f2f3f8;
+        border-top: none;
+    }
+    
+    .rentmy-profile-section table tr td,
+    .rentmy-profile-section table tr td p,
+    .rentmy-profile-section table tr td a {
+        color: #74788d;
+    }
+    
+    .rentmy-profile-section table tr td a {
+        cursor: pointer;
+        display: table-cell;
+        padding-right: 10px;
+    }
+    
+    .rentmy-profile-section .m-badge {
+        border-radius: 10px;
+        background: #eaeaea;
+        color: #444;
+        font-size: 15px;
+        line-height: 0;
+        padding: 5px 15px;
+    }
+    
+    .rentmy-profile-section .m-badge.m-badge--success {
+        background-color: #34bfa3;
+        color: #fff;
+    }
+    
+    .rentmy-profile-section .m-badge.m-badge--wide {
+        letter-spacing: .6px;
+        padding: 1px 10px;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .m-badge.m-badge--warning {
+        background-color: #ffb822;
+        color: #111;
+    }
+    
+    .rentmy-profile-section .m-badge.m-badge--wide {
+        letter-spacing: .6px;
+        padding: 1px 10px;
+    }
+    
+    .rentmy-profile-section .profile-info-title button {
+        background-color: #333;
+        color: #fff;
+        border-radius: 2px;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+    
+    .rentmy-profile-section .theme-btn {
+        background-color: #333;
+        border-color: #333;
+    }
+    
+    .rentmy-profile-section .order-back-btn {
+        margin-right: 15px;
+    }
+    
+    .rentmy-profile-section .profile-info-title {
+        height: 50px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .rentmy-profile-section .profile-info-title h4 {
+        line-height: 50px;
+        padding-left: 20px;
+        font-weight: 500;
+        color: #595d6e;
+    }
+    
+    .rentmy-profile-section .profile-body {
+        padding: 20px;
+    }
+    
+    .rentmy-profile-section .account-page-title h4 {
+        padding: 20px 0;
+        font-weight: 400;
+        color: #333;
+        display: inline-block;
+    }
+    
+    .rentmy-profile-section .my-profile-rightside {
+        background-color: #fff;
+        width: 100%;
+        min-height: 100px;
+        padding: 20px;
+    }
+    
+    .rentmy-profile-section .order-summary {
+        width: 400px;
+    }
+    
+    .rentmy-profile-section .order-summary h4 {
+        background-color: #f2f3f8;
+        padding: 10px 15px 8px;
+        font-size: 20px;
+    }
+    
+    .rentmy-profile-section thead,
+    .rentmy-profile-section tbody {
+        border-left: none;
+        border-right: none;
+    }
+    
+    .rentmy-profile-section .order-details-table tr th {
+        background-color: #f2f3f8;
+        border-top: none;
+        color: #686a73;
+    }
+    
+    .rentmy-profile-section .table td,
+    .rentmy-profile-section .table th {
+        padding: 15px 25px;
+        vertical-align: top;
+        border-top: 1px solid #f2f3f8;
+    }
+    
+    .rentmy-profile-section table tr td,
+    .rentmy-profile-section table tr td p,
+    .rentmy-profile-section table tr td a {
+        color: #74788d;
+        font-size: 15px !important;
+    }
+    
+    .rentmy-profile-section .status-for-1 {
+        background-color: #34bfa3;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-2 {
+        background-color: #ffb822;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-3 {
+        background-color: #34bfa3;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-4 {
+        background-color: #f4516c;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-5 {
+        background-color: #5867dd;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-6 {
+        background-color: #5867dd;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-7 {
+        background-color: #5867dd;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-11 {
+        background-color: #716aca;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-12 {
+        background-color: #0d725e;
+        color: #ffffff;
+    }
+    /* ----------- */
+    
+    .rentmy-profile-section .status-for-4-1,
+    .rentmy-profile-section .status-for-4-2,
+    .rentmy-profile-section .status-for-4-3 {
+        background-color: #f4516c;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section .status-for-6-1,
+    .rentmy-profile-section .status-for-6-2,
+    .rentmy-profile-section .status-for-6-3 {
+        background-color: #716aca;
+        color: #ffffff;
+    }
+    
+    .rentmy-profile-section table tr td h5 {
+        color: #686a73;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .rentmy-profile-section .info small {
+        color: #74788d;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    
+    .rentmy-profile-section .admin-quantity span {
+        height: 40px !important;
+        line-height: 28px;
+        padding: 5px 5px;
+        margin-top: -2px !important;
+    }
+    
+    .rentmy-profile-section .size,
+    .rentmy-profile-section .quantity {
+        width: 90px;
+    }
+    
+    .rentmy-profile-section .quantity.admin-quantity {
+        width: 190px;
+    }
+    
+    .rentmy-profile-section .description-fields p {
+        font-size: 15px !important;
+        color: #74788d;
+    }
+    
+    .rentmy-profile-section .description-fields p span {
+        font-weight: 400;
+    }
+    
+    .rentmy-profile-section .description-field-title {
+        font-weight: 600 !important;
+    }
+    
+    .rentmy-profile-section .quantity .btn {
+        border-radius: 0px;
+    }
+    
+    .rentmy-profile-section .quantity .cart-qunt {
+        width: 40px !important;
+        border: 1px solid;
+        cursor: initial;
+    }
+    
+    .rentmy-profile-section .order-rentaldate-area {
+        height: 37px;
+    }
+    
+    .rentmy-profile-section .rental-datelabel {
+        color: #74788d !important;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
+    .rentmy-profile-section .order-rentaldate-area app-date-time-range {
+        display: inline-block;
+    }
+    
+    .rentmy-profile-section .order-rentaldate-area .cancel-btn {
+        display: inline-block;
+        height: calc(2.25rem + 2px);
+        border-radius: 3px;
+        margin-left: 5px;
+        text-transform: capitalize;
+        padding: 0 12px;
+    }
+    
+    .rentmy-profile-section .client-productname {
+        color: #595d6e;
+    }
+    
+    .rentmy-profile-section label {
+        color: #74788d !important;
+    }
+    
+    .rentmy-profile-section .colorPurpel {
+        font-weight: 500;
+        color: #74788d !important;
+    }
+    
+    .rentmy-profile-section .form-group label,
+    .rentmy-profile-section .quant label {
+        font-weight: 500;
+        color: #74788d !important;
+    }
+    
+    .rentmy-profile-section .admin-quantity input {
+        height: 40px;
+        border: 1px solid #f2f3f8 !important;
+    }
+    
+    .rentmy-profile-section .admin-quantity input:focus {
+        box-shadow: none;
+        outline: 0;
+        border: 1px solid #f2f3f8 !important;
+    }
+    
+    .rentmy-profile-section .price h4 {
+        color: #595d6e;
+    }
+    
+    .rentmy-profile-section .add-item-form-area {
+        margin: 0 -20px;
+        border-top: 1px solid #f2f3f8;
+        padding: 20px 20px 0 !important;
+    }
+    
+    .rentmy-profile-section .profile-info-title h4 {
+        display: inline-block;
+    }
+    
+    .rentmy-profile-section .profile-title {
+        display: inline-block;
+        float: right;
+        height: 50px;
+        padding: 8px;
+    }
+    
+    @media (max-width: 1310px) {
+        .rentmy-profile-section .custome-table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+    }
+    
+    @media (max-width: 1199px) {
+        .rentmy-profile-section .admin-quantity {
+            width: 100%;
+        }
+        .rentmy-profile-section .admin-quantity input {
+            width: 80px;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .rentmy-profile-section .order-rentaldate-area {
+            height: auto;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .rentmy-profile-section .order-rentaldate-area {
+            height: auto;
+        }
+        .rentmy-profile-section .order-rentaldate-area .col-sm-12.text-right {
+            margin-top: 15px;
+            text-align: left !important;
+        }
+        .rentmy-profile-section .order-rentaldate-area .col-sm-12.text-right button {
+            float: left !important;
+        }
+        .rentmy-profile-section .add-item-form-area {
+            padding: 20px 0 0 !important;
+        }
+    }
+    
+    .rentmy-profile-section .quantity .btn {
+        padding: 5px !important;
+    }
+    
+    .rentmy-profile-section button.btn {
+        font-size: 15px;
+        padding: 5px 15px;
+        border-radius: 4px;
+    }
+    
+    .rentmy-profile-section .img-avatar {
+        width: 60px;
+    }
+    
+    .rentmy-profile-section .orderdetails-backbtn {
+        position: unset !important;
+    }
+    
+    .rentmy-profile-section .btn-brand {
+        color: #fff;
+        background-color: #716aca;
+        border-color: #716aca;
+    }
+    
+    .rentmy-profile-section .m-badge.m-badge--brand {
+        background-color: #716aca;
+        color: #fff;
+    }
+    
+    .rentmy-profile-section .form-group {
+        margin-bottom: 10px;
+    }
+    
+    .rentmy-profile-section .pdf-btn {
+        padding: 5px 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .rentmy-profile-section .form-control:focus,
+    .rentmy-profile-section .form-control:hover {
+        box-shadow: none;
+        border: 1px solid #555;
+    }
+    
+    .my-profile-item-title {
+        color: #424242;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-bottom: 4px;
+    }
+    
+    .my-profile-btn-update {
+        color: #f0f0f0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .my-profile-btn-update:hover {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        transition: font-weight .1s;
+    }
+    
+    .my-profile-buttons {
+        padding-top: 20px;
+    }
+    
+    .my-profile-body {
+        padding: 20px;
+    }
+    
+    .address-modal-header {
+        padding: 14px 25px !important;
+    }
+    
+    .address-modal-title {
+        color: #555;
+        margin: 0;
+    }
+    /* Start Cutomer Order History Pagination */
+    
+    .orderhistory-pagination {
+        font-size: 17px;
+    }
+    
+    .orderhistory-pagination li {
+        list-style: none;
+        float: left;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: 1px solid rgb(224, 224, 224);
+    }
+    
+    .orderhistory-pagination li:hover:not(.active) {
+        background-color: rgb(224, 224, 224);
+    }
+    
+    .orderhistory-pagination .active {
+        background-color: rgb(224, 224, 224);
+    }
+    
+    .orderhistory-pagination a {
+        text-decoration: none !important;
+        color: rgb(121, 121, 121);
+    }
+    /* End Pagination */
+    /* new customer profile css  */
+    
+    .rentmy-profile-section .userright-side {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .rentmy-profile-section .customerprofile-content {
+        background-color: #fff;
+        min-height: 100px;
+        box-shadow: 0 0 20px 8px rgba(51, 77, 136, 0.05);
+        border-radius: 3px;
+    }
+    
+    .rentmy-profile-section .customerprofile-content .rentmy-profile-rightside {
+        background-color: none !important;
+        min-height: none !important;
+        box-shadow: none !important;
+        border-radius: none !important;
+    }
+    
+    .rentmy-profile-section .nav.customer-profile-tab {
+        height: 55px;
+        border-bottom: 1px solid #f2f3f8;
+        flex-direction: unset !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .rentmy-profile-section .customer-profile-tab li {
+        display: inline-block;
+        margin: 0;
+        box-shadow: none !important;
+        outline: 0 !important;
+    }
+    
+    .rentmy-profile-section .nav-pills .nav-link,
+    .rentmy-profile-section .nav-pills .nav-link {
+        background-color: transparent;
+        text-decoration: none !important;
+        font-size: 18px;
+        color: #595d6e;
+        font-weight: 600;
+        display: block;
+        height: 55px;
+        outline: 0 !important;
+        line-height: 37px;
+        box-shadow: none !important;
+    }
+    
+    .rentmy-profile-section .nav-pills .nav-link i,
+    .rentmy-profile-section .nav-pills .nav-link i {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    
+    .rentmy-profile-section .nav-pills .nav-link.active,
+    .rentmy-profile-section .nav-pills .show>.nav-link {
+        font-weight: 600 !important;
+        background-color: #fff;
+        color: #595d6e;
+        border-left: 1px solid #f2f3f8;
+        border-right: 1px solid #f2f3f8;
+        border-top: 1px solid #f2f3f8;
+        border-radius: 0 !important;
+        position: relative;
+        box-shadow: none !important;
+        outline: 0 !important;
+    }
+    
+    .rentmy-profile-section .nav-pills .nav-link:focus,
+    .rentmy-profile-section .nav-pills .nav-link:active {
+        box-shadow: none !important;
+        outline: 0 !important;
+    }
+    
+    .rentmy-profile-section .nav-pills .nav-link.active:after,
+    .rentmy-profile-section .nav-pills .show>.nav-link:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #595d6e;
+        border-radius: 100px 100px 0 0;
+    }
+    
+    .rentmy-profile-section .profile-info-title {
+        height: auto;
+        border-bottom: none;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    
+    .rentmy-profile-section .profile-info-title h4 {
+        display: inline-block;
+        position: relative;
+        padding-left: 0;
+        padding: 17px 0;
+        font-size: 30px;
+        display: none;
+    }
+    
+    .rentmy-profile-section .profile-info-title h4:after {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: #595d6e;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .rentmy-profile-section a {
+        text-decoration: none !important;
+    }
+    
+    .rentmy-profile-section .table {
+        border: none;
+    }
+    
+    .rentmy-profile-section .table td,
+    .rentmy-profile-section .table th {
+        vertical-align: middle;
+    }
+    
+    .rentmy-profile-section table tr td a {
+        text-decoration: none !important;
+        box-shadow: none;
+    }
+    
+    .rentmy-profile-section #rentmy-clientprofile-history {
+        margin-top: 20px;
+    }
+    
+    .rentmy-page.has-sidebar:not(.error404) #primary {
+        float: left;
+        width: 100%;
+    }
+    
+    .rentmy-profile-section .orderhistory-pagination li {
+        border: 1px solid #f2f3f8 !important;
+    }
+    
+    .rentmy-profile-section .orderhistory-pagination .active {
+        background-color: #f2f3f8;
+    }
+    
+    .sameabove-checkbox .m-checkbox,
+    .sameabove-checkbox .m-radio {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px !important;
+        cursor: pointer;
+        font-size: 14px !important;
+        transition: all .3s;
+    }
+    
+    .sameabove-checkbox input[type=checkbox],
+    .sameabove-checkbox input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    .sameabove-checkbox .m-checkbox>input,
+    .sameabove-checkbox .m-radio>input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    
+    .sameabove-checkbox .m-checkbox>span,
+    .sameabove-checkbox .m-radio>span {
+        border-radius: 3px;
+        background: 0 0;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+    }
+    
+    .sameabove-checkbox .m-checkbox>span {
+        border: 1px solid #bdc3d4;
+    }
+    
+    .sameabove-checkbox .m-checkbox>input:checked~span {
+        border: 1px solid #bdc3d4;
+    }
+    
+    .sameabove-checkbox .m-radio>span:after,
+    .sameabove-checkbox .m-checkbox>span:after {
+        content: '';
+        position: absolute;
+        display: none;
+    }
+    
+    .sameabove-checkbox .m-checkbox>span:after {
+        top: 50%;
+        left: 50%;
+        margin-left: -2px;
+        margin-top: -6px;
+        width: 5px;
+        height: 10px;
+        border-width: 0 2px 2px 0 !important;
+        transform: rotate(45deg);
+    }
+    
+    .sameabove-checkbox .m-checkbox>span:after {
+        border: solid #7281a4;
+    }
+    
+    .sameabove-checkbox .m-checkbox>input:checked~span:after,
+    .sameabove-checkbox .m-radio>input:checked~span:after {
+        display: block;
+    }
+    
+    .rentmy-plugin-manincontent .custom-control.custom-radio {
+        margin-bottom: 10px;
+        padding-left: 25px;
+    }
+    
+    body.rentmy-page.page-two-column:not(.archive) #primary .entry-header,
+    body.rentmy-page.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+        float: left;
+        width: 100%;
+    }
+    
+    body.rentmy-page.page-two-column:not(.archive) #primary .entry-content,
+    body.rentmy-page.page-two-column #comments {
+        float: right;
+        width: 100%;
+    }
+    
+    .rentmy-profile-section .my-profile-item {
+        padding-top: 15px;
+    }
+    
+    #customer-address-modal .close:hover {
+        color: #000;
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 !important;
+        background-color: transparent;
+    }
+    
+    #customer-address-modal .btn {
+        padding: 10px 15px;
+    }
+    
+    .rentmy-profile-section .theme-btn {
+        color: #fff;
+    }
+    
+    .rentmy-profile-section .rentmy-profile-btn-cancel {
+        background-color: #eee;
+    }
+    
+    .rentmy-profile-section .theme-btn:focus,
+    .rentmy-profile-section .theme-btn:hover {
+        color: #fff;
+    }
+    
+    .rentmy-profile-section button:hover,
+    .rentmy-profile-section button:focus {
+        border: outline !important;
+        box-shadow: none !important;
+    }
+    /* reset and change password css  */
+    
+    .rentmy-customerreset-change-content .userlogin-box {
+        width: 450px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 20px 8px rgba(51, 77, 136, 0.05);
+        padding: 20px 40px 40px;
+        margin: auto;
+    }
+    
+    .rentmy-customerreset-change-content .login-title {
+        text-align: center;
+    }
+    
+    .rentmy-customerreset-change-content .login-title h1 {
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #222;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    
+    .rentmy-customerreset-change-content .login-title h1:not(.site-title):before,
+    .rentmy-customerreset-change-content .login-title h2:before {
+        display: none;
+    }
+    
+    .rentmy-customerreset-change-content .login-title span {
+        font-size: 18px;
+        color: #777;
+        padding: 0 85px;
+        display: inline-block;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .rentmy-customerreset-change-content .userlogin-body input {
+        width: 100%;
+        height: auto;
+        padding: 13px 15px 13px 20px;
+        font-size: 15px;
+        color: #7f8c8d;
+        background: #edf1f5;
+        border: 1px solid #edf1f5;
+        outline: 0;
+        border-radius: 3px;
+    }
+    
+    .rentmy-customerreset-change-content .userlogin-body input:hover,
+    .rentmy-customerreset-change-content .userlogin-body input:focus {
+        box-shadow: none;
+        outline: 0;
+    }
+    
+    .rentmy-customerreset-change-content .login {
+        height: auto;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 15px;
+        background-color: #212529;
+        color: #fff;
+        border: 0px;
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        outline: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 5px;
+        letter-spacing: 1px;
+    }
+    /* optional service  css  */
+    
+    .row.optional-service {
+        margin-right: -15px !important;
+        margin-left: -15px !important;
+    }
+    
+    .optional-service .form-group.row {
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .additional-charge-title {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .additional-charge-modal-icon {
+        float: right;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid #f2f3f8;
+        line-height: 27px;
+        background-color: #333;
+        border-radius: 3px;
+        color: #fff !important;
+        cursor: pointer;
+    }
+    
+    .additional-charge-modal-icon i {
+        font-size: 14px;
+    }
+    
+    .additional-chargelist-remove-icon {
+        float: left;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        background-color: #fff;
+        border: 1px solid #f2f3f8;
+        border-radius: 3px;
+        color: #333 !important;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-top: -2px;
+    }
+    
+    .additional-chargelist-remove-icon i {
+        font-size: 14px;
+    }
+    
+    .optional-service .col-form-label {
+        flex: auto;
+        max-width: max-content;
+        font-weight: 500;
+        padding: 0;
+        min-width: 30%;
+    }
+    
+    .optional-service .optional-service-content {
+        flex: auto;
+        max-width: max-content;
+        min-width: auto;
+        font-size: 16px;
+        font-weight: 600;
+        color: #555;
+        padding-top: 6px;
+    }
+    
+    .optional-service .optional-service-content .btn.btn-secondary {
+        background: #f2f3f8;
+        border: 1px solid #eee;
+        color: #333;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    
+    .optional-service .optional-service-content .btn.btn-secondary:focus,
+    .optional-service .optional-service-content .btn.btn-secondary:active {
+        box-shadow: none !important;
+        outline: 0;
+    }
+    
+    .optional-service .optional-service-content .btn.btn-secondary.btn-active {
+        background: #555;
+        border-color: #555;
+        color: #fff;
+    }
+    
+    .optional-service .optional-service-content label {
+        margin-bottom: 0;
+        font-weight: 400 !important;
+    }
+    
+    .optional-service .m-checkbox,
+    .optional-service .m-radio {
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all .3s;
+        flex: auto;
+        max-width: max-content;
+        min-width: 30%;
+    }
+    
+    .optional-service .m-checkbox>input,
+    .optional-service .m-radio>input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    
+    .optional-service input[type=checkbox],
+    .optional-service input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    .optional-service .m-checkbox>span,
+    .optional-service .m-radio>span {
+        border-radius: 3px;
+        background: 0 0;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+    }
+    
+    .m-checkbox>span {
+        border: 1px solid #bdc3d4;
+    }
+    
+    .optional-service .m-checkbox>input:checked~span {
+        border: 1px solid #bdc3d4;
+    }
+    
+    .optional-service .m-radio>span:after,
+    .optional-service .m-checkbox>span:after {
+        content: '';
+        position: absolute;
+        display: none;
+    }
+    
+    .optional-service .m-checkbox>span:after {
+        top: 50%;
+        left: 50%;
+        margin-left: -2px;
+        margin-top: -6px;
+        width: 5px;
+        height: 10px;
+        border-width: 0 2px 2px 0 !important;
+        transform: rotate(45deg);
+    }
+    
+    .optional-service .m-checkbox>span:after {
+        border: solid #7281a4;
+    }
+    
+    .optional-service .m-checkbox>input:checked~span:after,
+    .optional-service .m-radio>input:checked~span:after {
+        display: block;
+    }
+    
+    .input-ammount-area {
+        padding-top: 15px;
+        width: 100%;
+    }
+    
+    .input-ammount-area .input-group {
+        width: 230px;
+    }
+    
+    .input-ammount-area .form-control {
+        height: 32px !important;
+        color: #888;
+    }
+    
+    .input-ammount-area .input-group>.form-control:not(:last-child),
+    .input-ammount-area .input-group>.custom-select:not(:last-child) {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+    
+    .input-ammount-area .btn-outline-secondary {
+        color: #fff;
+        background-color: #555;
+        background-image: none;
+        border-color: #555;
+        padding: 0;
+        width: 35px;
+        height: 32px;
+        text-align: center;
+        margin-top: 0px;
+        border-radius: 2px !important;
+        padding: 0;
+        line-height: 10px;
+    }
+    
+    .input-ammount-area .btn-outline-secondary:active,
+    .input-ammount-area .btn-outline-secondary:focus {
+        box-shadow: none !important;
+        outline: 0;
+    }
+    
+    .input-ammount-area .btn-outline-secondary i {
+        font-size: 14px;
+    }
+    
+    .optional-cancel-btn {
+        color: #555 !important;
+        background-color: #f2f3f8 !important;
+        border-color: #f2f3f8 !important;
+    }
+    .optional-service-content .form-control {
+        width: auto;
+        height: 34px !important;
+        padding-top: 5px;
+    }
+    .optional-service-content .btn-group,
+    .optional-service-content .btn-group-vertical {
+        margin-bottom: 10px;
+    }
+    @media (min-width: 1425px) {
+        .form-group.row {
+            flex-wrap: unset !important;
+        }
+    }
+    
+    @media (max-width: 1424px) {
+        .form-group.row {
+            flex-wrap: unset !important;
+        }
+        .optional-service .col-form-label {
+            flex: 0 0 135px;
+            max-width: 135px;
+        }
+    }
+    
+    .additional-charge-modal .modal-dialog {
+        max-width: 700px;
+    }
+    
+    .additional-charge-modal .modal-body {
+        background-color: #fff;
+        border-color: #fff;
+        height: auto;
+    }
+    
+    .additional-charge-modal .modal-header {
+        padding: 15px 25px;
+    }
+    
+    .additional-charge-modal .modal-title {
+        margin: 0;
+        font-weight: 600;
+    }
+    
+    .additional-charge-modal .modal-header .close {
+        background-color: transparent;
+        margin-top: -23px;
+        font-size: 25px;
+    }
+    
+    .additional-charges-body .optional-service .btn-toolbar {
+        margin-top: -12px;
+    }
+    
+    .additional-charges-body .single-optional-service {
+        display: flex;
+        font-weight: 400;
+    }
+    
+    .additional-charges-body .optional-service .optional-service-content .single-optional-service label {
+        margin-bottom: 0;
+        font-weight: 400 !important;
+    }
+    
+    .additional-charges-body .optional-service .optional-service-content {
+        padding-top: 0;
+    }
+    
+    .additional-charges-body .optional-service .btn-toolbar {
+        margin-top: -6px;
+    }
+    
+    .additional-charges-body .single-optional-service .btn-toolbar {
+        display: unset;
+        flex-wrap: unset;
+        justify-content: unset;
+        width: auto;
+        margin-top: -6px;
+        margin-left: 10px;
+    }
+    
+    .additional-charges-body .optional-service .btn-brand {
+        color: #fff;
+        background-color: #041531;
+        border-color: #041531;
+    }
+    
+    .additional-charges-body .optional-service .btn-danger {
+        color: #fff;
+        background-color: #f4516c;
+        border-color: #f4516c;
+    }
+    
+    .additional-charges-body .optional-service .btn-sm,
+    .additional-charges-body .optional-service .btn-group-sm>.btn {
+        padding: 9px 20px;
+        font-size: 15px;
+    }
+
+
+
+    /* promotial price feature css */
+
+    .product_promotional .reduced {
+        position: absolute;
+        top: 21px;
+        left: -43px;
+        background-color: #FFFB66;
+        color: #222;
+        font-weight: 500;
+        line-height: 1;
+        font-size: 13px;
+        padding: 7px 40px;
+        border-radius: 2px;
+        transform: rotate(-34deg);
+    }
+    .product_promotional .price_text {
+        background-color: #87B952;
+        border: 3px solid #CFD65E;
+        padding: 10px;
+        margin-top: 15px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .product_promotional .price_text h6 {
+        font-weight: 400;
+        margin: 0 !important;
+    }
+    .product_promotional .price_text .price_text_titleone {
+        padding-bottom: 7px;
+    }
+    .product_promotional .price_text .price_text_titletwo {
+        margin-bottom: 0;
+    }
+
+   /* new code 7/19/2021   */
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-code {
+        display: flex;
+    }
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-code input {
+        width: 100%;
+        height: 42px;
+        border: 1px solid #eee;
+        margin-right: 10px;
+        border-radius: 3px;
+    }  
+    .rentmy-plugin-manincontent .rentmy-cart-form .coupon-code .coupon-btn {
+        width: 170px;
+        opacity: .9;
+    }  
+    .rentmy-plugin-manincontent .rentmy-cart-form .procces-contiue-checkout a {
+        height: 48px !important;
+        line-height: 48px !important;
+        padding: 0 50px !important;
+    }  
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-btn-area {
+        width: 100%;
+        text-align: center;
+    }  
+    .rentmy-plugin-manincontent .rentmy-cart-form .cart-checkout-btn-area .checkout-button {
+        float: unset;
+        height: 48px !important;
+        background-color: #2e353b;
+        color: #fff;
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        display: inline-block;
+        text-transform: capitalize;
+        line-height: 48px !important;
+        padding: 0 60px !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 3px !important;
+        letter-spacing: 0.046875em !important;
+        cursor: pointer;
+        font-size: 15px !important;
+    }
+    .rentmy-checkout-content #order_review_heading {
+        left: 15px !important;
+    } 
+    .rentmy-checkout-content .order_review_wrapper {
+        padding: 20px 20px 35px !important;
+    } 
+    .rentmy-checkout-content .row.optional-service {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .rentmy-checkout-content .additional-charges-body .row.optional-service {
+        margin-right: -15px !important;
+        margin-left: -15px !important;
+    }
+    .rentmy-checkout-content .placeorder-btn {
+        position: relative;
+        z-index: 1;
+    }
+    @media (min-width: 992px) and (max-width: 1199px){
+        .rentmy-checkout-content .backtocart-btn {
+            padding: 9px 12px !important;
+            font-size: 14px !important;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px){
+        .rentmy-checkout-content .placeorder-btn {
+            padding: 9px 12px !important;
+            font-size: 14px !important;
+        }
+    }
+    .rentmy-checkout-content .card-header h2 {
+        padding-bottom: 0 !important;
+    }
+    .rentmy-checkout-content #payment-request-button {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .rentmy-plugin-manincontent.rentmy-checkout-content .card-header .custom-control.custom-radio {
+        line-height: 0;
+    }
+    @media (max-width: 575px){
+        .rentmy-checkout-content #payment-request-button {
+            width: 100% !important;
+        }
+    }
+
+    /* 7/20/2021  */
+    .rentmy-plugin-manincontent .tab-pane.active .custom-control-input:checked~.custom-control-label::before {
+        color: #fff;
+        border-color: #333 !important;
+        background-color: #333 !important;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills {
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-top: 10px;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-item {
+        width: 31%;
+        margin: 0 1%;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link {
+        text-align: center;
+        box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+        border: 1px solid #f2f3f8;
+        outline: 0;
+        text-decoration: none;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: .5px;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link img {
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link .fulfillment-noneactive-img {
+        display: block;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link .fulfillment-active-img {
+        display: none;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link.active,
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .show>.nav-link {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link.active .fulfillment-active-img,
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .show>.nav-link .fulfillment-active-img {
+        display: block;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .nav-link.active .fulfillment-noneactive-img,
+    .rentmy-checkout-content.rentmy-plugin-manincontent .nav-pills .show>.nav-link .fulfillment-noneactive-img {
+        display: none;
+    }
+    .rentmy-checkout-content.rentmy-plugin-manincontent .fulfillment-form-area .rent-my-loader {
+        position: absolute;
+        top: 3px;
+        left: 70%;
+    }
+/*-- 4/21/2022 --*/
+.rm-delivery-option ul {
+    padding: 0;
+    margin: 0;
+}
+.rm-delivery-option ul li {
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 5px 12px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    font-weight: 400;
+    color: #666;
+    font-size: 16px;
+}
+.rm-delivery-option ul li.delivery-option-active {
+    border: 1px solid #333;
+    color: #333;
+}
+
+.delivery-checkout-multistore-body .card-header {
+    padding: 0 5px !important;
+    background-color: transparent !important;
+    border: 1px solid #f2f3f8 !important;
+    border-radius: 5px 5px 0 0 !important;
+    padding-bottom: 0!important;
+    margin-bottom: 0 !important;
+}
+.delivery-checkout-multistore-body .card-header button {
+    outline: 0;
+    width: 100%;
+}
+.delivery-checkout-multistore-body .card-header .btn-link {
+    display: flex;
+    align-items: center;
+    background-color: transparent !important;
+}
+.delivery-checkout-multistore-body .card-header button:hover,
+.delivery-checkout-multistore-body .card-header button:active,
+.delivery-checkout-multistore-body .card-header button:focus{
+    outline: 0;
+    box-shadow: none;
+    background-color: transparent !important;
+}
+
+.delivery-checkout-multistore-body .service-part {
+    border-top: 1px solid #f2f3f8;
+}
+
+.delivery-checkout-multistore-body .m-checkbox>span,
+.delivery-checkout-multistore-body .m-radio>span {
+    top: -18px;
+}
+
+.delivery-checkout-multistore-body .m-checkbox>input:checked~span,
+.delivery-checkout-multistore-body .m-radio>input:checked~span {
+    top: -18px;
+}
+
+.delivery-checkout-multistore-body .delivery-cost-option ul{
+    padding: 0;
+    margin: 0;
+}
+.delivery-checkout-multistore-body .delivery-cost-option ul li{
+    display: inline-block;
+    margin: 8px 12px 0 0;    
+}
+
+.delivery-checkout-multistore-body .delivery-cost-option ul li span{
+    display: inline-block;
+    padding: 5px 7px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #ddd;
+    border-radius: 3px;  
+}
+
+@media (max-width: 575px) {
+    .delivery-checkout-multistore-body .caps {
+        font-size: 13px;
+    }
+}
+.delivery-checkout-multistore-body .card {
+    margin-bottom: 20px;
+}
+.delivery-checkout-multistore-body .card-header {
+    padding: 0 5px 0 5px;
+    background-color: transparent;
+    border: 1px solid #f2f3f8;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 0 !important;
+}
+.delivery-checkout-multistore-body .card-head-row {
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-checkout-multistore-body .delivery-collaps {
+    width: 100%;
+    padding:5px 0px 5px 0;
+}
+.delivery-checkout-multistore-body .card-header .btn:focus,
+.delivery-checkout-multistore-body .card-header .btn:hover {
+    text-decoration: none;
+}
+.delivery-checkout-multistore-body .delivery-collaps-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delivery-checkout-multistore-body .delivery-collaps-title {
+    color: #111;
+    font-weight: 600;
+    font-size: 15px;
+}
+.delivery-checkout-multistore-body .delivery-collaps-above {
+    min-width: 145px;
+}
+.delivery-checkout-multistore-body .delivery-collaps-nameaddress span {
+    display: block;
+    width: 100%;
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.delivery-checkout-multistore-body .delivery-collaps-above label {
+    font-size: 15px !important;
+}
+.delivery-checkout-multistore-body .collaps-arrow {
+    color: #111;
+}
+.delivery-checkout-multistore-body .card-header .btn-link i {
+    font-size: 28px;
+}
+.delivery-checkout-multistore-body .card-header .btn-link .fa-angle-up {
+    display: none;
+}
+.delivery-checkout-multistore-body .card-header .btn-link.collaps-active .fa-angle-up {
+    display: inline-block;
+}
+.delivery-checkout-multistore-body .card-header .btn-link.collaps-active .fa-angle-down {
+    display: none;
+}
+.delivery-checkout-multistore-body .card-header .btn-link .fa-angle-down {
+    display: inline-block;
+}
+.delivery-checkout-multistore-body .card-header .btn-link.collaps-active.collapsed .fa-angle-down {
+    display: inline-block;
+}
+.delivery-checkout-multistore-body .card-header .btn-link.collaps-active.collapsed .fa-angle-up {
+    display: none;
+}
+
+.delivery-checkout-multistore-body .card-body {
+    border: 1px solid #f2f3f8;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 20px !important;
+}
+.delivery-checkout-multistore-body .m-checkbox>span, .m-radio>span {
+    top: -1px !important;
+}
+.delivery-checkout-multistore-body .delivery-cost-btn {
+    background-color: #333;
+    border-color: #333;
+    padding: 8px 20px;
+    color: #fff;
+}
+.delivery-checkout-multistore-body .delivery-cost-btn:focus,
+.delivery-checkout-multistore-body .delivery-cost-btn:hover,
+.delivery-checkout-multistore-body .delivery-cost-btn:active {
+    color: #fff;
+    box-shadow: none;
+    outline: 0;
+}
+@media (max-width:1199px) {
+    .delivery-checkout-multistore-body .card-header {
+        padding: 5px 40px 5px 5px;
+        background-color: transparent;
+        border: 1px solid #f2f3f8;
+        border-radius: 5px 5px 0 0;
+    }
+    .delivery-checkout-multistore-body .delivery-collaps-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .delivery-checkout-multistore-body .delivery-collaps-title,
+    .delivery-checkout-multistore-body .delivery-collaps-nameaddress,
+    .delivery-checkout-multistore-body .delivery-collaps-above {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .delivery-checkout-multistore-body .delivery-collaps-above {
+        margin-bottom: 0;
+    }
+    .delivery-checkout-multistore-body .collaps-arrow {
+        top: 65px;
+    }
+}
+.delivery-checkout-multistore-body .card-head-row {
+    position: relative;
+}
+.delivery-checkout-multistore-body .delivery-collaps-above.same-as-above {
+    position: absolute;
+    top: 6px;
+    right: 48px;
+    min-width: unset
+}
+.rm-delivery-option {
+    margin-bottom: 8px;
+}
+.rentmy-plugin-manincontent .rm-delivery-option h6,
+.rentmy-plugin-manincontent .variants label,
+.rentmy-plugin-manincontent .rentmy-custom-fields label {
+    color: #333;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 1;
+}
+.rentmy-plugin-manincontent .rentmy-product-details .variants {
+    margin-bottom: 10px;
+}
+.rentmy-plugin-manincontent .rentmy-product-details .variantSets {
+    margin-bottom: 10px;
+}
+.rentmy-plugin-manincontent .rentmy-product-details label {
+    font-weight: 500;
+}
+.rentmy-disable {
+    cursor: not-allowed !important;
+    border: 1px solid #eee !important;
+    opacity: 0.6;
+}
+
+
+/*-- cart css --*/
+.rentmy-plugin-manincontent {
+    display: inline-block;
+    position: relative;
+}
+
+.rentmy-plugin-manincontent .cart-bar {
+    position: relative;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    cursor: pointer;
+}
+.rentmy-plugin-manincontent .cart-item {
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 10px #ccc;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+}
+.rentmy-plugin-manincontent .cart-item {
+    background-color: #444444;
+}
+.rentmy-plugin-manincontent .cart-body {
+    background: #fff;
+    border-left: 1px solid #f2f3f8;
+    border-right: 1px solid #f2f3f8;
+    border-bottom: 1px solid #f2f3f8;
+    display: none;
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    -webkit-transition: all 0.2s linear;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.rentmy-plugin-manincontent .cart-body-left {
+    left: 0;
+}
+.rentmy-plugin-manincontent .top-arrow {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    color: #fff;
+    line-height: 0;
+}
+
+.rentmy-plugin-manincontent .inner-cart-body {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.rentmy-plugin-manincontent .cart-list {
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    display: table;
+    border-bottom: 1px solid #eee;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.rentmy-plugin-manincontent .cart-list img {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee;
+    object-fit: contain;
+}
+
+.rentmy-plugin-manincontent .cart-name-price {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+.rentmy-plugin-manincontent .cart-name-price h4 {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.rentmy-plugin-manincontent .cart-name-price h4 a {
+    float: right;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 13px;
+    color: #041531;
+}
+
+.rentmy-plugin-manincontent .cart-name-price span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.rentmy-plugin-manincontent .carthome-total {
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+
+.rentmy-plugin-manincontent .carthome-total h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.rentmy-plugin-manincontent .carthome-total h5 span {
+    float: right;
+    color: #555;
+    font-weight: 400;
+}
+.rentmy-plugin-manincontent .carthome-total .button {
+    width: 49%;
+    display: inline-block !important;
+    background-color: #333;
+    color: #fff;
+}
+.rentmy-plugin-manincontent .creditcard-pay-btn {
+    margin-bottom: 15px;
+}
+.rentmy-plugin-manincontent .creditcard-pay-btn .btn {
+    background-color: #eee;
+    color: #333;
+    border: none;
+}
+.rentmy-plugin-manincontent .creditcard-pay-btn .btn:hover,
+.rentmy-plugin-manincontent .creditcard-pay-btn .btn:active,
+.rentmy-plugin-manincontent .creditcard-pay-btn .btn:focus {
+    background-color: #eee !important;
+    color: #333 !important;
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.rentmy-plugin-manincontent .creditcard-pay-btn .btn:active,
+.rentmy-plugin-manincontent .creditcard-pay-btn .btn:focus,
+.rentmy-plugin-manincontent .creditcard-pay-btn .paybtn-active {
+    background-color: #5867dd !important;
+    color: #fff !important;
+}
+.rentmy-plugin-manincontent {
+    width: 100%;
+}
+@media (max-width:1350px) {
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid {
+        width: 20%;
+    }
+}
+@media (max-width:1199px) {
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid {
+        width: 25%;
+    }
+}
+@media (max-width:992px) {
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid {
+        width: 33.333333%;
+    }
+}
+@media (max-width:767px) {
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid {
+        width: 50%;
+    }
+}
+@media (max-width:575px) {
+    .rentmy-plugin-manincontent .rentmy-product-list.cart-related-producst-list .products .product-grid {
+        width: 100%;
+    }
+    .rentmy-plugin-manincontent .related-product-title h4 {
+        font-size: 18px;
+    }
+}
+.rentmy-plugin-manincontent .file-uploader {
+    position: relative;
+    font: normal normal normal 14px/1 FontAwesome
+}
+.rentmy-plugin-manincontent .file-uploader::after{
+    content: "\f0ee";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.rentmy-plugin-manincontent .file-uploade-box {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border: 1px solid #eff1f7;
+}
+.rentmy-plugin-manincontent .file-uploade-box input[type=file] {
+    max-width: 60px !important;
+}
+.rentmy-plugin-manincontent .file-uploader {
+    position: relative;
+    font: normal normal normal 14px/1 FontAwesome;
+    border: none !important;
+    border-radius: 0px;
+}
+.rentmy-plugin-manincontent .file-uploader::after{
+    content: "\f0ee";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    padding: 5px 10px;
+}
+.rentmy-plugin-manincontent .file-uploader ~ .selected-filename{
+    margin:0;
+    padding: 5px 0px;
+    pointer-events: none;
+    line-height: 16px;
+}
